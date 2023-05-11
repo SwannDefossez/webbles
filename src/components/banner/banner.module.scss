@@ -1,0 +1,15 @@
+.banner {
+  overflow: hidden;
+}
+
+.bannerImg {
+  filter: blur(4px);
+  transform: scale(1.1);
+  object-position: 0rem -32.5rem;
+  transition: all 1s;
+  &:hover {
+    filter: blur(0px);
+    transform: scale(1.2);
+    transition: all 1s;
+  }
+}
