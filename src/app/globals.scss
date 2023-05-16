@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -338,4 +342,32 @@ template {
 
 [hidden] {
   display: none;
+}
+
+//scrollbar custom
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0b0a14;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 1rem;
+}
+
+// custom css swiperjs
+:root {
+  --swiper-theme-color: #ffffff !important;
+}
+
+.swiper-button-next:after {
+  margin-left: 25vw;
+}
+
+.swiper-button-prev:after {
+  margin-right: 25vw;
 }

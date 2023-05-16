@@ -6,12 +6,14 @@ const useMouseCoords = () => {
   useEffect(() => {
     const handleCoords = ({ clientX, clientY }) => {
       setCoords([clientX, clientY]);
-     
     };
-
-    window.addEventListener("mousemove", handleCoords);
+    typeof window === "undefined"
+      ? false
+      : window.addEventListener("mousemove", handleCoords);
     return () => {
-      window.removeEventListener("mousemove", handleCoords);
+      typeof window === "undefined"
+        ? false
+        : window.removeEventListener("mousemove", handleCoords);
     };
   }, []);
 

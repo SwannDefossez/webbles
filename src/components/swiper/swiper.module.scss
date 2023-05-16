@@ -1,0 +1,19 @@
+@import "../../styles/mixins";
+
+.swiper {
+  @include flex(column, center, center);
+  gap: 5rem;
+  border-radius: 2rem;
+  z-index: 5;
+}
+.swipeslider {
+  width: 500px;
+  height: 500px;
+}
+
+.img {
+  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+

@@ -1,0 +1,33 @@
+@import "../styles/mixins";
+
+.home {
+  @include flex(column, center, center);
+  background-color: #0b0a14;
+  color: white;
+  overflow: hidden;
+}
+
+.main {
+  &__text {
+    @include flex(column, flex-start, center);
+    height: 50vh;
+    width: 80%;
+    gap: 5rem;
+    margin-bottom: 25rem;
+  
+  }
+  &__content {
+    margin-top: 5rem;
+    position: relative;
+    width: 100%;
+    @include flex(column, flex-start, center);
+    height: 250vh;
+  }
+}
+
+.astronaut {
+  position: absolute;
+  width: 100%;
+  top: 60vh;
+  left: -15vw;
+}

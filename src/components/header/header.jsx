@@ -119,9 +119,9 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <Link className={css.menu__link} href="/">
+              <a className={css.menu__link} href="/">
                 Home
-              </Link>
+              </a>
             </motion.li>
             <motion.li
               onHoverStart={() => setLiHovered(true)}
@@ -133,7 +133,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <Link className={css.menu__link} href="/creation">
+              <Link className={css.menu__link} href="#swiper">
                 Créations
               </Link>
             </motion.li>

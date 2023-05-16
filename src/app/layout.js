@@ -3,14 +3,8 @@
 import React from "react";
 import "./globals.scss";
 import { Roboto } from "next/font/google";
-// import Header from "../components/header/header";
+import Header from "../components/header/header";
 const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
-
-// import dynamic from "next/dynamic";
-
-// const DynamicHeader = dynamic(() => import("../components/header/header"), {
-//   loading: () => <p>Loading...</p>,
-// });
 
 export const metadata = {
   title: "Webbles",
@@ -21,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        {/* <DynamicHeader /> */}
+        <Header />
         {children}
       </body>
     </html>
