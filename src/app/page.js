@@ -6,6 +6,7 @@ import css from "./page.module.scss";
 import ParticleBackground from "../components/particle/particleBackground";
 import Swiper from "../components/swiper/swiper";
 import Footer from "../components/footer/footer";
+import Tarif from "../components/tarif/tarif";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -13,8 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 export default function page() {
   return (
     <div className={css.home}>
-     
-      
       <div className={css.main__content}>
         <div className={css.main__text}>
           <h1>Lorem ipsum </h1>
@@ -42,6 +41,7 @@ export default function page() {
         </div>
 
         <Swiper />
+        <Tarif />
         <ParticleBackground />
         <Footer />
       </div>
