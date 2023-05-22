@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
+    loader: "akamai",
+    path: "/",
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -1,14 +1,32 @@
 @import "../../styles/mixins";
+@import "../../styles/breakpoints";
 
 .swiper {
   @include flex(column, center, center);
+  margin-top: 20rem;
   gap: 5rem;
   border-radius: 2rem;
   z-index: 5;
+  &__fusee {
+    opacity: 0.25;
+  }
+  &__title {
+    @include flex(column, center, center);
+    letter-spacing: 0.7rem;
+  }
 }
-.swipeslider {
-  width: 500px;
-  height: 500px;
+.swipeslider,
+.swipeslider img {
+  width: 200px;
+  height: 200px;
+  @include md {
+    width: 400px;
+    height: 400px;
+  }
+  @include xxl {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 .img {
@@ -16,4 +34,3 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-

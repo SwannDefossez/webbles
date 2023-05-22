@@ -5,13 +5,16 @@ import Banner from "../components/banner/banner";
 import css from "./page.module.scss";
 import ParticleBackground from "../components/particle/particleBackground";
 import Swiper from "../components/swiper/swiper";
-import Astronaut from "../components/astronaut/astronaut";
 import Footer from "../components/footer/footer";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function page() {
   return (
     <div className={css.home}>
-      <Banner />
+     
+      
       <div className={css.main__content}>
         <div className={css.main__text}>
           <h1>Lorem ipsum </h1>
@@ -37,9 +40,7 @@ export default function page() {
             tortor id purus. Vestibulum ac venenatis arcu.
           </h3>
         </div>
-        <div className={css.astronaut}>
-          <Astronaut />
-        </div>
+
         <Swiper />
         <ParticleBackground />
         <Footer />

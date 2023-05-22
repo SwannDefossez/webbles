@@ -27,7 +27,6 @@ function astronaut() {
         trigger: parentRef.current,
         start: "top bottom",
         end: "+=1000",
-     
       },
     });
   }, []);

@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "../styles/breakpoints";
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth; /* 3 */
 }
 
 /* Sections
@@ -347,11 +350,11 @@ template {
 //scrollbar custom
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0b0a14;
+  background-color: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -365,9 +368,21 @@ template {
 }
 
 .swiper-button-next:after {
-  margin-left: 25vw;
+  margin-left: 10rem;
+  @include md {
+    margin-left: 20rem;
+  }
+  @include xxl {
+    margin-left: 40rem;
+  }
 }
 
 .swiper-button-prev:after {
-  margin-right: 25vw;
+  margin-right: 10rem;
+  @include md {
+    margin-right: 20rem;
+  }
+  @include xxl {
+    margin-right: 40rem;
+  }
 }
