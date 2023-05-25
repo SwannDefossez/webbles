@@ -8,7 +8,7 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 export default function page() {
   return (
-    <div className={css.container}>
+    <div id="contact" className={css.container}>
       <ParticleBackground />
       <div className={css.contact}>
         <h1>Contactez nous</h1>

@@ -98,7 +98,7 @@ function header() {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{  delay: "0.3" }}
+          transition={{ delay: "0.3" }}
           onHoverStart={() => setIsHovered(true)}
           onHoverEnd={() => setIsHovered(false)}
           className={`${css.header__burger} ${
@@ -174,7 +174,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <Link className={css.menu__link} href="/contact">
+              <Link className={css.menu__link} href="/contact#contact">
                 Contact
               </Link>
             </motion.li>

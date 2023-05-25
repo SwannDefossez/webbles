@@ -13,9 +13,12 @@
     @include flex(column, flex-start, center);
     height: 50vh;
     width: 80%;
+
     gap: 5rem;
     margin-bottom: 25rem;
     z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10rem;
   }
   &__content {

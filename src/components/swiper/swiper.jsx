@@ -16,7 +16,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-cards";
 import "swiper/css/navigation";
 // import required modules
-import { EffectCards, Pagination, Navigation } from "swiper";
+import { EffectCards, Navigation } from "swiper";
 
 export default function App() {
   const sliderRef = useRef(null);
@@ -77,7 +77,6 @@ export default function App() {
                 style={{ objectFit: "cover" }}
                 width={500}
                 height={500}
-               
                 alt="2"
                 className={css.img}
               />{" "}
