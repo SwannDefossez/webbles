@@ -78,13 +78,14 @@
 .wrapper {
   z-index: 998;
   position: fixed;
+
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   transition: all 0.25s ease;
   background-color: #000000;
-  
+
   &__link {
     color: white;
     text-decoration: none;
@@ -123,6 +124,10 @@
 
 .absolute {
   position: absolute;
+}
+
+.none {
+  display: none;
 }
 
 @-webkit-keyframes AnimationName {

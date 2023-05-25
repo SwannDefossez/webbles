@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import React from "react";
-import Banner from "../components/banner/banner";
 import css from "./page.module.scss";
 import ParticleBackground from "../components/particle/particleBackground";
 import Swiper from "../components/swiper/swiper";

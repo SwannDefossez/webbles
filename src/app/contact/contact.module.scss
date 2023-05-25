@@ -1,0 +1,39 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+.container {
+  background-color: #0b0a14;
+  color: white;
+  height: 140vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  & h1 {
+    margin: 0;
+    letter-spacing: 0.5rem;
+  }
+}
+
+.contact {
+  z-index: 3;
+  position: relative;
+  margin-top: 10rem;
+  @include flex(column, center, center);
+  gap: 10vh;
+  &__content {
+    @include flex(column-reverse, center, center);
+    gap: 10vw;
+    @include lg {
+      @include flex(row, center, center);
+      gap: 15vw;
+    }
+  }
+  &__info {
+    @include flex(column, center, flex-start);
+    letter-spacing: 0.25rem;
+  }
+  &__mail,
+  &__phone {
+    @include flex(row, center, center);
+    gap: 3rem;
+  }
+}

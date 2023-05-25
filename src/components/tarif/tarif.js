@@ -3,7 +3,7 @@ import css from "./tarif.module.scss";
 
 function tarif() {
   return (
-    <div className={css.tarif}>
+    <div className={css.tarif} id="tarifs">
       <h2>Nos Tarifs</h2>
       <div className={css.container}>
         <div className={css.card}>

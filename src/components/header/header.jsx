@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import { motion, stagger, useAnimate } from "framer-motion";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import css from "./header.module.scss";
 import Hamburger from "hamburger-react";
 import Link from "next/link";
@@ -47,9 +47,6 @@ function header() {
   const [x, y] = useMouseCoords();
   //burger open/close
   const [isOpen, setOpen] = useState(false);
-  // cursor position
-  // const [cursorX, setCursorX] = useState();
-  // const [cursorY, setCursorY] = useState();
 
   // cursor scale 5 on hover ( title and burger)
   const [isHovered, setIsHovered] = useState(false);
@@ -88,11 +85,20 @@ function header() {
           className={css.header__h1}
         >
           <Link className={css.header__link} href="/">
-            <h1>Webbles</h1>
+            <motion.h1
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.75 }}
+            >
+              Webbles
+            </motion.h1>
           </Link>
         </motion.div>
 
         <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{  delay: "0.3" }}
           onHoverStart={() => setIsHovered(true)}
           onHoverEnd={() => setIsHovered(false)}
           className={`${css.header__burger} ${
@@ -114,7 +120,10 @@ function header() {
           className={css.header__bcg}
         />
 
-        <motion.div ref={scope} className={` ${isOpen ? css.wrapper : ""}`}>
+        <motion.div
+          ref={scope}
+          className={` ${isOpen ? css.wrapper : css.none}`}
+        >
           <motion.ul onClick={() => setOpen(false)} className={css.menu}>
             <motion.li
               onHoverStart={() => setLiHovered(true)}
@@ -139,7 +148,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <a className={css.menu__link} href="#swip">
+              <a className={css.menu__link} href="/#swip">
                 Créations
               </a>
             </motion.li>
@@ -152,9 +161,9 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <Link className={css.menu__link} href="/tarif">
+              <a className={css.menu__link} href="/#tarifs">
                 Tarifs
-              </Link>
+              </a>
             </motion.li>
             <motion.li
               onHoverStart={() => setLiHovered(true)}

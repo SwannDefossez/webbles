@@ -6,11 +6,6 @@ const nextConfig = {
     loader: "akamai",
     path: "/",
   },
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
-  },
 };
 
 module.exports = nextConfig;

@@ -1,4 +1,5 @@
 @import "../styles/mixins";
+@import "../styles/breakpoints";
 
 .home {
   @include flex(column, center, center);
@@ -15,13 +16,17 @@
     gap: 5rem;
     margin-bottom: 25rem;
     z-index: 3;
+    margin-top: 10rem;
   }
   &__content {
-    margin-top: 5rem;
     position: relative;
-    width: 100%;
     @include flex(column, flex-start, center);
-    height: 400vh;
+    width: 100%;
+    height: 500vh;
+
+    @include xxl {
+      height: 390vh;
+    }
   }
 }
 

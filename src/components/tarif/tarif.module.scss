@@ -10,19 +10,35 @@
 }
 
 .container {
-  @include flex(row, center, center);
+  @include flex(column, center, center);
+  flex-wrap: wrap;
   gap: 8rem;
+  @include xl {
+    flex-direction: row;
+  }
 }
 
 .card {
   @include flex(column, flex-start, center);
   overflow: hidden;
-  height: 75vh;
-  width: 25vw;
+  height: 50vh;
+  width: 75vw;
+  @include md {
+    max-width: 60%;
+  }
+  @include xl {
+    height: 75vh;
+    width: 35vw;
+  }
+  @include xxl {
+    height: 75vh;
+    width: 25vw;
+  }
   border: 2px white solid;
   border-radius: 2rem;
   letter-spacing: 0.25rem;
   background-color: rgba(66, 66, 66, 0.274);
+
   & h3 {
     font-size: 1.5rem;
   }

@@ -1,9 +1,37 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
 .footer {
-  width: 100vw;
-  height: 10rem;
-  background-color: black;
   position: absolute;
+  @include flex(column, center, center);
+  @include md {
+    @include flex(row, space-around, center);
+  }
+  width: 100vw;
+  height: 6rem;
+  background-color: black;
   left: 0;
   bottom: 0;
   z-index: 2;
+  &__info {
+    @include flex(row, space-around, center);
+    gap: 2rem;
+  }
+  & a {
+    text-decoration: none;
+    color: rgb(150, 115, 136);
+    border-bottom: 0px white solid;
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      transition: width 0.3s;
+    }
+    &:hover::after {
+      width: 100%;
+      //transition: width .3s;
+    }
+  }
 }
