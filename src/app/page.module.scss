@@ -6,36 +6,24 @@
   background-color: #0b0a14;
   color: white;
   overflow: hidden;
+  position: relative;
 }
 
 .main {
   &__text {
     @include flex(column, flex-start, center);
-    height: 50vh;
     width: 80%;
 
     gap: 5rem;
-    margin-bottom: 25rem;
     z-index: 3;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;
   }
   &__content {
-    position: relative;
     @include flex(column, flex-start, center);
     width: 100%;
-    height: 500vh;
-
-    @include xxl {
-      height: 390vh;
-    }
+    margin-bottom: 20rem;
+    gap: 25vw;
   }
-}
-
-.astronaut {
-  position: absolute;
-  width: 100%;
-  top: 60vh;
-  left: -15vw;
 }

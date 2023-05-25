@@ -2,7 +2,6 @@
 @import "../../styles/breakpoints";
 
 .footer {
-  position: absolute;
   @include flex(column, center, center);
   @include md {
     @include flex(row, space-around, center);
@@ -10,8 +9,7 @@
   width: 100vw;
   height: 6rem;
   background-color: black;
-  left: 0;
-  bottom: 0;
+  color: white;
   z-index: 2;
   &__info {
     @include flex(row, space-around, center);

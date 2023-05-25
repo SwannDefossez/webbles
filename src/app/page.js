@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import css from "./page.module.scss";
 import ParticleBackground from "../components/particle/particleBackground";
 import Swiper from "../components/swiper/swiper";
-import Footer from "../components/footer/footer";
+
 import Tarif from "../components/tarif/tarif";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -63,7 +63,6 @@ export default function page() {
         <Swiper />
         <Tarif />
         <ParticleBackground />
-        <Footer />
       </div>
     </div>
   );

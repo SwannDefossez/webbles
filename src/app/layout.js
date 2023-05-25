@@ -4,6 +4,7 @@ import React from "react";
 import "./globals.scss";
 import { Roboto } from "next/font/google";
 import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
