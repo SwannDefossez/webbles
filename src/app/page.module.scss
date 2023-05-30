@@ -11,10 +11,10 @@
 
 .main {
   &__text {
-    @include flex(column, flex-start, center);
+    @include flex(column, space-evenly, center);
     width: 80%;
 
-    gap: 5rem;
+    gap: 0.5rem;
     z-index: 3;
     margin-left: auto;
     margin-right: auto;
