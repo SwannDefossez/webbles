@@ -183,6 +183,20 @@ function header() {
                 Contact
               </Link>
             </motion.li>
+            
+            <motion.li
+              onHoverStart={() => setLiHovered(true)}
+              onHoverEnd={() => setLiHovered(false)}
+              whileHover={{
+                scale: 1.25,
+                transition: { duration: 0.1 },
+              }}
+              className={css.menu__li}
+            >
+              <a className={css.menu__link} href="/lexique#lexique">
+                Lexique
+              </a>
+            </motion.li>
           </motion.ul>
         </motion.div>
 

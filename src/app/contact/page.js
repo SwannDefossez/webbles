@@ -2,9 +2,10 @@
 import React from "react";
 import css from "./contact.module.scss";
 import ParticleBackground from "../../components/particle/particleBackground";
-import Footer from "../../components/footer/footer";
+
 import Form from "../../components/form/form.jsx";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -19,16 +20,16 @@ export default function page() {
           <div className={css.contact__info}>
             <div className={css.contact__mail}>
               <AiOutlineMail />
-              <h3>contact@webbles.fr</h3>
+              <Link href={'mailto:contact@webbles.fr'}>contact@webbles.fr</Link>
             </div>
             <div className={css.contact__phone}>
               <AiOutlinePhone />
-              <h3>06 27 59 92 75</h3>
+              <Link href={'tel:+33627599275'}>06 27 59 92 75</Link>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }

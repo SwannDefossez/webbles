@@ -30,10 +30,29 @@
   &__info {
     @include flex(column, center, flex-start);
     letter-spacing: 0.25rem;
+    & a {
+      text-decoration: none;
+      color: rgb(150, 115, 136);
+      border-bottom: 0px white solid;
+      font-weight: bold;
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ffffff;
+        transition: width 0.3s;
+      }
+      &:hover::after {
+        width: 100%;
+        //transition: width .3s;
+      }
+    }
   }
   &__mail,
   &__phone {
     @include flex(row, center, center);
     gap: 3rem;
   }
+
 }
