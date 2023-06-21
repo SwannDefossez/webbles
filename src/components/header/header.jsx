@@ -95,7 +95,7 @@ function header() {
             <motion.h2 initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75 }}>
-            <h2>Agence Web Digitale</h2>
+            Agence Web Digitale
             </motion.h2>
           </Link>
         </motion.div>
