@@ -13,21 +13,22 @@
   &__text {
     @include flex(column, space-evenly, center);
     width: 80%;
-
+    font-size: 20px;
+    @include xl {
+      font-size: 25px;
+    }
     gap: 0.5rem;
-    z-index: 3;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;
-p{
-  text-align: center
-}
-
+    line-height: 40px;
   }
   &__content {
     @include flex(column, flex-start, center);
     width: 100%;
     margin-bottom: 20rem;
     gap: 25vw;
+    z-index: 5;
   }
 }

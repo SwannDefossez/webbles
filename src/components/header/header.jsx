@@ -7,6 +7,7 @@ import Hamburger from "hamburger-react";
 import Link from "next/link";
 import Image from "next/image";
 import useMouseCoords from "../useMouseCoords/useMouseCoords";
+
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
 function useMenuAnimation(isOpen) {
@@ -82,24 +83,30 @@ function header() {
             scale: 1.0,
             transition: { duration: 0.1 },
           }}
-          className={css.header__h1}
-        >
+          className={css.header__h1}>
           <Link className={css.header__link} href="/">
             <motion.h1
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.75 }}
-            >
-              Webbles
+              transition={{ duration: 0.75 }}>
+              WEBBLES
             </motion.h1>
-            <motion.h2 initial={{ y: 100, opacity: 0 }}
+            <motion.h2
+              initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75 }}>
-            Agence Web Digitale
+              Agence Web Digitale
             </motion.h2>
           </Link>
         </motion.div>
-
+        <Image
+          priority={true}
+          src="/webblestext.webp"
+          alt="logo webbles"
+          width={200}
+          height={200}
+          className={css.header__webbles}
+        />
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -108,8 +115,7 @@ function header() {
           onHoverEnd={() => setIsHovered(false)}
           className={`${css.header__burger} ${
             isOpen ? css.fixed : css.absolute
-          }`}
-        >
+          }`}>
           <Hamburger
             className={css.hamburger}
             toggled={isOpen}
@@ -127,8 +133,7 @@ function header() {
 
         <motion.div
           ref={scope}
-          className={` ${isOpen ? css.wrapper : css.none}`}
-        >
+          className={` ${isOpen ? css.wrapper : css.none}`}>
           <motion.ul onClick={() => setOpen(false)} className={css.menu}>
             <motion.li
               onHoverStart={() => setLiHovered(true)}
@@ -137,8 +142,7 @@ function header() {
                 scale: 1.25,
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}
-            >
+              className={css.menu__li}>
               <a className={css.menu__link} href="/">
                 Home
               </a>
@@ -148,25 +152,10 @@ function header() {
               onHoverEnd={() => setLiHovered(false)}
               whileHover={{
                 scale: 1.25,
-
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}
-            >
-              <a className={css.menu__link} href="/#swip">
-                Créations
-              </a>
-            </motion.li>
-            <motion.li
-              onHoverStart={() => setLiHovered(true)}
-              onHoverEnd={() => setLiHovered(false)}
-              whileHover={{
-                scale: 1.25,
-                transition: { duration: 0.1 },
-              }}
-              className={css.menu__li}
-            >
-              <a className={css.menu__link} href="/#tarifs">
+              className={css.menu__li}>
+              <a className={css.menu__link} href="/tarif">
                 Tarifs
               </a>
             </motion.li>
@@ -177,13 +166,12 @@ function header() {
                 scale: 1.25,
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}
-            >
+              className={css.menu__li}>
               <Link className={css.menu__link} href="/contact#contact">
                 Contact
               </Link>
             </motion.li>
-            
+
             <motion.li
               onHoverStart={() => setLiHovered(true)}
               onHoverEnd={() => setLiHovered(false)}
@@ -191,8 +179,7 @@ function header() {
                 scale: 1.25,
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}
-            >
+              className={css.menu__li}>
               <a className={css.menu__link} href="/lexique#lexique">
                 Lexique
               </a>
@@ -207,8 +194,7 @@ function header() {
           style={{
             left: x + "px",
             top: y + "px",
-          }}
-        ></motion.div>
+          }}></motion.div>
       </div>
     </>
   );

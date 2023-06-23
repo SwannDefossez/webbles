@@ -40,7 +40,10 @@
   &__bcg {
     position: absolute;
     z-index: 1;
-    opacity: 0.20;
+    opacity: 0.2;
+  }
+  &__webbles {
+    z-index: 50;
   }
 }
 

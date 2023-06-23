@@ -3,10 +3,11 @@
 .container {
   background-color: #0b0a14;
   color: white;
-  height: 140vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
   position: relative;
+
   & h1 {
     margin: 0;
     letter-spacing: 0.5rem;
@@ -14,9 +15,11 @@
 }
 
 .contact {
+  height: 100%;
   z-index: 3;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 7rem;
+  margin-bottom: 7.5rem;
   @include flex(column, center, center);
   gap: 10vh;
   &__content {
@@ -30,6 +33,7 @@
   &__info {
     @include flex(column, center, flex-start);
     letter-spacing: 0.25rem;
+    gap: 2rem;
     & a {
       text-decoration: none;
       color: rgb(150, 115, 136);
@@ -54,5 +58,4 @@
     @include flex(row, center, center);
     gap: 3rem;
   }
-
 }

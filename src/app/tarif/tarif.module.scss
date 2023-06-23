@@ -1,19 +1,17 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
 .container {
   background-color: #0b0a14;
   color: white;
-  height: 140vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
   position: relative;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
   & h1 {
     margin: 0;
     letter-spacing: 0.5rem;
-  }
-  .contain {
-    padding: 2rem;
-    h2,
-    .presentation {
-      text-align: center;
-    }
   }
 }

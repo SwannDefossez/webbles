@@ -3,7 +3,8 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
-    loader: "akamai",
+    formats: ["image/webp"],
+    loader: "imgix",
     path: "/",
   },
 };
