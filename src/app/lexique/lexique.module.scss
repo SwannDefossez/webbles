@@ -1,0 +1,18 @@
+.container {
+    background-color: #0b0a14;
+    color: white;
+    height: 140vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    & h1 {
+      margin: 0;
+      letter-spacing: 0.5rem;
+    }
+    .contain{
+padding: 2rem;
+h2, .presentation{
+    text-align: center;
+}
+    }
+  }

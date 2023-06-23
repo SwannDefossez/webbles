@@ -7,10 +7,8 @@
   text-decoration: none;
   background: linear-gradient(271deg, #000000, #000103, #000207);
   background-size: 600% 600%;
-
   -webkit-animation: AnimationName 33s ease infinite;
   animation: AnimationName 33s ease infinite;
-
   color: white;
   overflow: hidden;
   @include flex(row, center, center);
@@ -27,7 +25,6 @@
   }
   &__burger {
     @include flex(row, center, center);
-
     cursor: pointer;
     transition: all 0.2s ease;
     transform: scale(1);
@@ -43,7 +40,7 @@
   &__bcg {
     position: absolute;
     z-index: 1;
-    opacity: 0.05;
+    opacity: 0.20;
   }
 }
 
