@@ -40,8 +40,7 @@ function astronaut() {
         height="300"
         viewBox="0 0 1920 300"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        xmlns="http://www.w3.org/2000/svg">
         <path
           ref={pathRef}
           id="path"

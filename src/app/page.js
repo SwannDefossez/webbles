@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import css from "./page.module.scss";
 import ParticleBackground from "../components/particle/particleBackground";
-import Swiper from "../components/swiper/swiper";
+import Swiper from "../components/tarif/swiper/swiper";
 import Header from "../components/header/header";
 
 import { gsap } from "gsap";
@@ -76,7 +76,7 @@ export default function page() {
               </p>
 
               <p>
-                Bienveillance, simplicité, accompagnement, sont pour nous des
+                - Bienveillance, simplicité, accompagnement, sont pour nous des
                 valeurs importantes, nous privilégions une collaboration
                 personnalisée
               </p>
@@ -91,7 +91,9 @@ export default function page() {
                 projets dans d'autres régions, y compris Paris.
               </p>
 
-              <p>* : voir lexique</p>
+              <p>
+                * : voir <a href="/lexique">Lexique</a>
+              </p>
             </div>
           </div>
 

@@ -37,11 +37,15 @@
   }
   border: 2px white solid;
   border-radius: 2rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.15rem;
   background-color: rgba(66, 66, 66, 0.274);
 
   & h3 {
     font-size: 2rem;
+  }
+  & h4 {
+    font-size: 1.2rem;
+    line-height: 35px;
   }
   &__header {
     @include flex(column, center, center);
@@ -56,25 +60,29 @@
 }
 
 .header1 {
-  background-color: rgb(160, 70, 70);
+  background-color: rgb(210, 157, 192);
 }
 .header2 {
-  background-color: rgb(70, 119, 160);
+  background-color: rgb(231, 220, 202);
 }
 .header3 {
-  background-color: rgb(65, 134, 82);
+  background-color: rgb(156, 203, 192);
 }
 .header4 {
-  background-color: rgb(134, 65, 119);
-}.header5 {
-  background-color: rgb(65, 134, 82);
-}.header6 {
-  background-color: rgb(65, 134, 82);
-}.header7 {
-  background-color: rgb(65, 134, 82);
+  background-color: rgb(194, 214, 196);
+}
+.header5 {
+  background-color: rgb(146, 160, 207);
+}
+.header6 {
+  background-color: rgb(255, 187, 187);
+}
+.header7 {
+  background-color: rgb(183, 210, 157);
 }
 .header8 {
-  background-color: rgb(65, 134, 82);
-}.header9 {
-  background-color: rgb(65, 134, 82);
+  background-color: rgb(167, 146, 207);
+}
+.header9 {
+  background-color: rgb(203, 157, 156);
 }

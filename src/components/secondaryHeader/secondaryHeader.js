@@ -85,24 +85,21 @@ function secondaryHeader() {
           <li>
             <Link
               className={pathname == "/tarif" ? css.active : ""}
-              href="/tarif"
-            >
+              href="/tarif">
               <h3>Tarifs</h3>
             </Link>
           </li>
           <li>
             <Link
               className={pathname == "/contact" ? css.active : ""}
-              href="/contact"
-            >
+              href="/contact">
               <h3>Contact</h3>
             </Link>
           </li>
           <li>
             <Link
               className={pathname == "/lexique" ? css.active : ""}
-              href="/lexique"
-            >
+              href="/lexique">
               <h3>Lexique</h3>
             </Link>
           </li>
@@ -118,8 +115,7 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}
-          >
+            className={css.menu__li}>
             <a className={css.menu__link} href="/">
               Home
             </a>
@@ -131,8 +127,7 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}
-          >
+            className={css.menu__li}>
             <a className={css.menu__link} href="/tarif">
               Tarifs
             </a>
@@ -144,8 +139,7 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}
-          >
+            className={css.menu__li}>
             <Link className={css.menu__link} href="/contact#contact">
               Contact
             </Link>
@@ -158,8 +152,7 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}
-          >
+            className={css.menu__li}>
             <a className={css.menu__link} href="/lexique#lexique">
               Lexique
             </a>

@@ -4,13 +4,15 @@
 .home {
   @include flex(column, center, center);
   background-color: #0b0a14;
-  color: white;
+  color: rgb(231, 231, 231);
   overflow: hidden;
   position: relative;
 }
 
 .main {
   &__text {
+    position: relative;
+    z-index: 5;
     @include flex(column, space-evenly, center);
     width: 80%;
     font-size: 20px;
@@ -18,7 +20,10 @@
       font-size: 25px;
     }
     gap: 0.5rem;
-
+    & h3,
+    & a {
+      color: rgb(187, 110, 110);
+    }
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;

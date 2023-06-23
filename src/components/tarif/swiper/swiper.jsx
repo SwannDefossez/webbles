@@ -56,8 +56,7 @@ export default function App() {
           grabCursor={true}
           effect={"cards"}
           modules={[EffectCards, Navigation]}
-          className={css.swipeslider}
-        >
+          className={css.swipeslider}>
           <SwiperSlide>
             <Link href="/">
               <Image

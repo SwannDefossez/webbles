@@ -26,7 +26,6 @@ function banner() {
           start: "top top", // when the top of the trigger hits the top of the viewport
           end: "+=1000", // end after scrolling 500px beyond the start
           scrub: 0.1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar}
-         
         },
       }
     );
@@ -42,8 +41,7 @@ function banner() {
         ease: easeInOut,
         delay: 0.4,
       }}
-      className={css.banner}
-    >
+      className={css.banner}>
       <Image
         ref={imgRef}
         priority={true}

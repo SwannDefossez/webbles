@@ -85,28 +85,34 @@ function header() {
           }}
           className={css.header__h1}>
           <Link className={css.header__link} href="/">
-            <motion.h1
+            <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75 }}>
-              WEBBLES
-            </motion.h1>
+              <Image
+                priority={true}
+                src="/webblestext.png"
+                alt="logo webbles"
+                width={548}
+                height={80}
+                className={css.header__webbles}
+              />
+            </motion.div>
             <motion.h2
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75 }}>
               Agence Web Digitale
             </motion.h2>
+            <motion.h2
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.75 }}>
+              Site En Construction
+            </motion.h2>
           </Link>
         </motion.div>
-        <Image
-          priority={true}
-          src="/webblestext.webp"
-          alt="logo webbles"
-          width={200}
-          height={200}
-          className={css.header__webbles}
-        />
+
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

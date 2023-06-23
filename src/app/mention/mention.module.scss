@@ -6,22 +6,17 @@
   gap: 3rem;
   background-color: #0b0a14;
   color: white;
-  height: 220vh;
+  height: 100%;
   font-size: 1rem;
   overflow: hidden;
   position: relative;
-  @include sm {
-    height: 180vh;
-  }
-  @include lg {
-    height: 120vh;
-  }
-& h4 {
+ 
+  & h4 {
     color: rgb(255, 187, 187);
-}
-& h5 {
+  }
+  & h5 {
     color: rgb(184, 184, 184);
-}
+  }
   & h1 {
     margin: 0;
     letter-spacing: 0.5rem;
