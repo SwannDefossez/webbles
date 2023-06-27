@@ -82,12 +82,14 @@ function header() {
             scale: 1.0,
             transition: { duration: 0.1 },
           }}
-          className={css.header__h1}>
+          className={css.header__h1}
+        >
           <a className={css.header__link} href="/">
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.75 }}>
+              transition={{ duration: 0.75 }}
+            >
               <Image
                 priority={true}
                 src="/webblestext.png"
@@ -97,18 +99,15 @@ function header() {
                 className={css.header__webbles}
               />
             </motion.div>
+
             <motion.h2
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.75 }}>
+              transition={{ duration: 0.75 }}
+            >
               Agence Web Digitale
             </motion.h2>
-            <motion.h2
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.75 }}>
-              Site En Construction
-            </motion.h2>
+            
           </a>
         </motion.div>
 
@@ -120,7 +119,8 @@ function header() {
           onHoverEnd={() => setIsHovered(false)}
           className={`${css.header__burger} ${
             isOpen ? css.fixed : css.absolute
-          }`}>
+          }`}
+        >
           <Hamburger
             className={css.hamburger}
             toggled={isOpen}
@@ -130,7 +130,7 @@ function header() {
         </motion.div>
         <Image
           src="/background.jpg"
-          alt="background"
+          alt="Photo en Islande de Jonatan Pie"
           width={1920}
           height={1080}
           className={css.header__bcg}
@@ -138,7 +138,8 @@ function header() {
 
         <motion.div
           ref={scope}
-          className={` ${isOpen ? css.wrapper : css.none}`}>
+          className={` ${isOpen ? css.wrapper : css.none}`}
+        >
           <motion.ul onClick={() => setOpen(false)} className={css.menu}>
             <motion.li
               onHoverStart={() => setLiHovered(true)}
@@ -147,7 +148,8 @@ function header() {
                 scale: 1.25,
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}>
+              className={css.menu__li}
+            >
               <a className={css.menu__link} href="/">
                 Home
               </a>
@@ -159,7 +161,8 @@ function header() {
                 scale: 1.25,
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}>
+              className={css.menu__li}
+            >
               <a className={css.menu__link} href="/tarif">
                 Tarifs
               </a>
@@ -171,7 +174,8 @@ function header() {
                 scale: 1.25,
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}>
+              className={css.menu__li}
+            >
               <a className={css.menu__link} href="/contact#contact">
                 Contact
               </a>
@@ -184,7 +188,8 @@ function header() {
                 scale: 1.25,
                 transition: { duration: 0.1 },
               }}
-              className={css.menu__li}>
+              className={css.menu__li}
+            >
               <a className={css.menu__link} href="/lexique#lexique">
                 Lexique
               </a>
@@ -199,7 +204,8 @@ function header() {
           style={{
             left: x + "px",
             top: y + "px",
-          }}></motion.div>
+          }}
+        ></motion.div>
       </div>
     </>
   );

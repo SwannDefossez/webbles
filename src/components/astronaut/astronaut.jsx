@@ -40,7 +40,8 @@ function astronaut() {
         height="300"
         viewBox="0 0 1920 300"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           ref={pathRef}
           id="path"
@@ -57,7 +58,7 @@ function astronaut() {
         width={100}
         height={100}
         className={css.rocket}
-        alt="rocket"
+        alt="Dessin en svg d'une fusée"
       />
     </>
   );

@@ -44,6 +44,12 @@
   }
   &__webbles {
     z-index: 50;
+    width: 70vw;
+    height: auto;
+    @include md {
+      height: 80px;
+      width: 548px;
+    }
   }
 }
 
