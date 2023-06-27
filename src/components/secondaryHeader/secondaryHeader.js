@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import css from "./secondaryHeader.module.scss";
 import { motion, stagger, useAnimate } from "framer-motion";
 import Hamburger from "hamburger-react";
@@ -78,30 +77,30 @@ function secondaryHeader() {
       <nav className={css.nav}>
         <ul>
           <li>
-            <Link className={pathname == "/" ? css.active : ""} href="/">
+            <a className={pathname == "/" ? css.active : ""} href="/">
               <h3>Home</h3>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              className={pathname == "/tarif" ? css.active : ""}
-              href="/tarif">
+            <a className={pathname == "/tarif" ? css.active : ""} href="/tarif">
               <h3>Tarifs</h3>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className={pathname == "/contact" ? css.active : ""}
-              href="/contact">
+              href="/contact"
+            >
               <h3>Contact</h3>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className={pathname == "/lexique" ? css.active : ""}
-              href="/lexique">
+              href="/lexique"
+            >
               <h3>Lexique</h3>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -115,7 +114,8 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}>
+            className={css.menu__li}
+          >
             <a className={css.menu__link} href="/">
               Home
             </a>
@@ -127,7 +127,8 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}>
+            className={css.menu__li}
+          >
             <a className={css.menu__link} href="/tarif">
               Tarifs
             </a>
@@ -139,10 +140,11 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}>
-            <Link className={css.menu__link} href="/contact#contact">
+            className={css.menu__li}
+          >
+            <a className={css.menu__link} href="/contact#contact">
               Contact
-            </Link>
+            </a>
           </motion.li>
 
           <motion.li
@@ -152,7 +154,8 @@ function secondaryHeader() {
               scale: 1.25,
               transition: { duration: 0.1 },
             }}
-            className={css.menu__li}>
+            className={css.menu__li}
+          >
             <a className={css.menu__link} href="/lexique#lexique">
               Lexique
             </a>

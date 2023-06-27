@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import css from "./page.module.scss";
 import ParticleBackground from "../components/particle/particleBackground";
-import Swiper from "../components/tarif/swiper/swiper";
+import Swiper from "../components/swiper/swiper";
 import Header from "../components/header/header";
 
 import { gsap } from "gsap";

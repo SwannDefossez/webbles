@@ -1,6 +1,5 @@
 import React from "react";
 import css from "./footer.module.scss";
-import Link from "next/link";
 function footer() {
   return (
     <div className={css.footer}>
@@ -10,7 +9,7 @@ function footer() {
         <h5>06 27 59 92 75</h5>
       </div>
       <div>
-        <Link href="/mention">Mentions légales</Link>
+        <a href="/mention">Mentions légales</a>
       </div>
     </div>
   );

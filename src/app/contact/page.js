@@ -5,7 +5,7 @@ import ParticleBackground from "../../components/particle/particleBackground";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 import Form from "../../components/form/form.jsx";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-import Link from "next/link";
+
 
 export default function page() {
   return (
@@ -21,11 +21,11 @@ export default function page() {
           <div className={css.contact__info}>
             <div className={css.contact__mail}>
               <AiOutlineMail size={32} />
-              <Link href={"mailto:contact@webbles.fr"}>contact@webbles.fr</Link>
+              <a href={"mailto:contact@webbles.fr"}>contact@webbles.fr</a>
             </div>
             <div className={css.contact__phone}>
               <AiOutlinePhone size={32} />
-              <Link href={"tel:+33627599275"}>06 27 59 92 75</Link>
+              <a href={"tel:+33627599275"}>06 27 59 92 75</a>
             </div>
           </div>
         </div>
