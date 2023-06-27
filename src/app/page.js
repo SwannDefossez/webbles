@@ -103,7 +103,7 @@ export default function page() {
             </div>
           </div>
 
-          <Swiper />
+          {/* <Swiper /> */}
 
           <ParticleBackground />
         </div>

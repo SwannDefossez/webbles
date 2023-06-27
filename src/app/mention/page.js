@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from "react";
-import Footer from "../../components/footer/footer";
 import css from "./mention.module.scss";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export default function page() {
