@@ -3,7 +3,7 @@ import "./globals.scss";
 import { Roboto } from "next/font/google";
 import Footer from "../components/footer/footer";
 const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
-
+import GoogleAnalytics from './GoogleAnalytics';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,10 +14,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
+      <GoogleAnalytics/>
       <body className={roboto.className}>
         {children}
         <Footer />
+        
       </body>
+      
     </html>
   );
 }
