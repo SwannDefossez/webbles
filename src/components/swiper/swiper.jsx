@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 // gsap
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -58,7 +57,7 @@ export default function App() {
           modules={[EffectCards, Navigation]}
           className={css.swipeslider}>
           <SwiperSlide>
-            <Link href="/">
+            <a href="/">
               <Image
                 src="/img_1.jpg"
                 style={{ objectFit: "cover" }}
@@ -67,10 +66,10 @@ export default function App() {
                 alt="1"
                 className={css.img}
               />
-            </Link>
+            </a>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="/creation">
+            <a href="/creation">
               <Image
                 src="/img_2.jpg"
                 style={{ objectFit: "cover" }}
@@ -79,7 +78,7 @@ export default function App() {
                 alt="2"
                 className={css.img}
               />{" "}
-            </Link>
+            </a>
           </SwiperSlide>
           <SwiperSlide>
             <Image

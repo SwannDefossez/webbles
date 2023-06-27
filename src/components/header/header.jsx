@@ -4,7 +4,6 @@ import { motion, stagger, useAnimate } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import css from "./header.module.scss";
 import Hamburger from "hamburger-react";
-import Link from "next/link";
 import Image from "next/image";
 import useMouseCoords from "../useMouseCoords/useMouseCoords";
 
@@ -84,7 +83,7 @@ function header() {
             transition: { duration: 0.1 },
           }}
           className={css.header__h1}>
-          <Link className={css.header__link} href="/">
+          <a className={css.header__link} href="/">
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -110,7 +109,7 @@ function header() {
               transition={{ duration: 0.75 }}>
               Site En Construction
             </motion.h2>
-          </Link>
+          </a>
         </motion.div>
 
         <motion.div
@@ -173,9 +172,9 @@ function header() {
                 transition: { duration: 0.1 },
               }}
               className={css.menu__li}>
-              <Link className={css.menu__link} href="/contact#contact">
+              <a className={css.menu__link} href="/contact#contact">
                 Contact
-              </Link>
+              </a>
             </motion.li>
 
             <motion.li
