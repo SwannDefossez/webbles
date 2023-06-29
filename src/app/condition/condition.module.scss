@@ -1,0 +1,25 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+.container {
+  background-color: #0b0a14;
+
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  &__content {
+    padding: 2rem;
+  }
+  & h1 {
+    color: white;
+    margin: 0;
+    letter-spacing: 0.5rem;
+  }
+  & p {
+    font-size: 20px;
+    color: rgb(236, 236, 236);
+  }
+  & h3 {
+    color: #cfcaff;
+  }
+}
