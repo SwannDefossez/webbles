@@ -30,10 +30,8 @@ function tarif() {
           <div className={css.card__content}>
             <div>
               <h4>
-                1 page présentation avec photos et textes description activité,
-              </h4>
-
-              <h4>
+                1 page présentation avec photos et textes description activité
+              <br/>
                 1 page contact, avec design adaptatif
                 mobile/tablette/ordinateur, optimisation SEO, lien vers vos
                 réseaux sociaux
