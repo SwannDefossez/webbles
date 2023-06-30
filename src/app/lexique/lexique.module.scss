@@ -5,9 +5,7 @@
   background-color: #0b0a14;
   color: white;
   height: 100%;
-  @include sm {
-    height: 90.2vh;
-  }
+ 
   overflow: hidden;
   position: relative;
   & h1 {
