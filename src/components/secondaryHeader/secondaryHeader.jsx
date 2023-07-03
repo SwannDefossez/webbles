@@ -1,8 +1,8 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect } from "react";
 import css from "./secondaryHeader.module.scss";
 import { motion, stagger, useAnimate } from "framer-motion";
 import Hamburger from "hamburger-react";
-import useMouseCoords from "../useMouseCoords/useMouseCoords";
 import { usePathname } from "next/navigation";
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 function useMenuAnimation(isOpen) {
@@ -42,28 +42,6 @@ function secondaryHeader() {
   const pathname = usePathname();
   //burger open/close
   const [isOpen, setOpen] = useState(false);
-  const [x, y] = useMouseCoords();
-
-  // cursor scale 5 on hover ( title and burger)
-  const [isHovered, setIsHovered] = useState(false);
-  const hovered = {
-    scale: 5,
-    transition: { duration: 0.25 },
-  };
-  const none = {
-    scale: 1,
-    transition: { duration: 0.25 },
-  };
-  // cursor scale 5 on hover ( title and burger)
-  const [liHovered, setLiHovered] = useState(false);
-  const scale = {
-    scale: 3,
-    transition: { duration: 0.25 },
-  };
-  const liNone = {
-    scale: 1,
-    transition: { duration: 0.25 },
-  };
 
   // animation menu li
   const scope = useMenuAnimation(isOpen);
