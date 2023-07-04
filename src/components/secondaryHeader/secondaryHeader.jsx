@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import css from "./secondaryHeader.module.scss";
 import { motion, stagger, useAnimate } from "framer-motion";
 import Hamburger from "hamburger-react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 function useMenuAnimation(isOpen) {
@@ -47,7 +48,16 @@ function secondaryHeader() {
   const scope = useMenuAnimation(isOpen);
   return (
     <div className={css.header}>
-      <div>LOGO</div>
+      <a href="/">
+        <Image
+          priority={true}
+          src="/logoentier.png"
+          alt="logo webbles"
+          width={150}
+          height={40}
+          className={css.header__webbles}
+        />
+      </a>
       <div className={css.hamburger}>
         <Hamburger toggled={isOpen} toggle={setOpen} rounded />
       </div>

@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <input type="submit" value="ENVOYER" className={css.button} />
+      <input  type="submit" value="ENVOYER" className={css.button} />
     </form>
   );
 };

@@ -20,6 +20,9 @@
     & a {
       text-decoration: none;
       color: white;
+      &:hover {
+        color: #a38d8d;
+      }
     }
     display: block;
     & ul {
@@ -42,12 +45,6 @@
   @include xl {
     display: none;
   }
-  //   transition: all 0.2s ease;
-  //   transform: scale(1);
-  //   &:hover {
-  //     transition: all 0.2s ease;
-  //     transform: scale(1.5);
-  //   }
 }
 
 .wrapper {
