@@ -1,11 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { easeOut, motion, stagger, useAnimate } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import css from "./header.module.scss";
 import Hamburger from "hamburger-react";
 import Image from "next/image";
 import useMouseCoords from "../useMouseCoords/useMouseCoords";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
@@ -107,7 +108,6 @@ function header() {
             >
               Agence Web Digitale
             </motion.h2>
-            
           </a>
         </motion.div>
 
@@ -127,6 +127,19 @@ function header() {
             toggle={setOpen}
             rounded
           />
+        </motion.div>
+        <motion.div
+          className={css.header__icon}
+          initial={{ y: 0 }}
+          animate={{ y: 70 }}
+          transition={{
+            repeat: Infinity,
+            repeatDelay: 1,
+            duration: 1.5,
+            ease: easeOut,
+          }}
+        >
+          <AiOutlineArrowDown size={90} />
         </motion.div>
         <Image
           src="/background.jpg"

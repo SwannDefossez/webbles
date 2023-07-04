@@ -11,7 +11,7 @@ export default function page() {
       <ParticleBackground />
       <div className={css.container__content}>
         <h1>Condition générale de vente</h1>
-        <h3>Définitions</h3>
+        <h3 className={css.container__h3}>Définitions</h3>
         <p className={css.presentation}>
           Le Prestataire : NOM est une société dont le siège social est situé
           ….., immatriculée au registre du commerce et des sociétés de …. sous
@@ -44,7 +44,9 @@ export default function page() {
           est considéré comme nul.
         </p>
         <div className={css.definition}>
-          <h3>Article 1 : Objet - Domaine d'application</h3>
+          <h3 className={css.container__h3}>
+            Article 1 : Objet - Domaine d'application
+          </h3>
           <p>
             Les Conditions Générales ont pour objet de régir les relations
             contractuelles entre LE PRESTATAIRE et le CLIENT et définir
@@ -77,7 +79,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 2 : Formation et conditions d'exécution du contrat</h3>
+          <h3 className={css.container__h3}>
+            Article 2 : Formation et conditions d'exécution du contrat
+          </h3>
           <p>
             L'obligation respective de chaque partie, de réaliser la prestation
             pour LE PRESTATAIRE et de payer la prestation pour le CLIENT, naît à
@@ -117,7 +121,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 3 : Prix - facturations - délais</h3>
+          <h3 className={css.container__h3}>
+            Article 3 : Prix - facturations - délais
+          </h3>
           <p>
             Le prix et les conditions de facturations sont indiqués sur le
             devis. Le prix de la prestation est ferme. Il est net de charges et
@@ -144,7 +150,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 4 : Livraison de la prestation</h3>
+          <h3 className={css.container__h3}>
+            Article 4 : Livraison de la prestation
+          </h3>
           <p>
             Sauf stipulation expresse contraire, la livraison, quelle que soit
             la prestation, sera effectué au paiement de la facture. Les délais
@@ -171,7 +179,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 5 : Responsabilités du PRESTATAIRE</h3>
+          <h3 className={css.container__h3}>
+            Article 5 : Responsabilités du PRESTATAIRE
+          </h3>
           <p>
             LE PRESTATAIRE fera ses meilleurs efforts pour apporter tout le soin
             et la diligence nécessaires à la fourniture d'un service de qualité
@@ -216,7 +226,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 6 : Propriétés intellectuelles</h3>
+          <h3 className={css.container__h3}>
+            Article 6 : Propriétés intellectuelles
+          </h3>
           <p>
             Tout élément fourni par le CLIENT est protégé par le droit de la
             propriété intellectuelle et reste sa seule propriété. Il déclare
@@ -254,7 +266,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 7 : Réserve de propriété</h3>
+          <h3 className={css.container__h3}>
+            Article 7 : Réserve de propriété
+          </h3>
           <p>
             LE PRESTATAIRE conserve l'entière propriété de la prestation et de
             chacun de ses éléments, y compris immatériel, jusqu'au paiement
@@ -269,7 +283,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 8 : Utilisation des références</h3>
+          <h3 className={css.container__h3}>
+            Article 8 : Utilisation des références
+          </h3>
           <p>
             Le CLIENT autorise LE PRESTATAIRE à utiliser son nom et à mentionner
             les prestations réalisées pour son compte à des fins commerciales.
@@ -280,7 +296,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 9 : Loi informatique et liberté</h3>
+          <h3 className={css.container__h3}>
+            Article 9 : Loi informatique et liberté
+          </h3>
           <p>
             Le CLIENT s'engage expressément à assurer lui-même l'ensemble des
             formalités éventuelles à accomplir auprès de la CNIL (Commission
@@ -311,7 +329,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 10 : Dispositions générales</h3>
+          <h3 className={css.container__h3}>
+            Article 10 : Dispositions générales
+          </h3>
           <p>
             Divisibilité Si l’une quelconque des stipulations du présent contrat
             s’avérait nulle au regard d’une règle de droit en vigueur ou d’une
@@ -338,7 +358,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 11 : Loi Applicable et attribution de juridiction</h3>
+          <h3 className={css.container__h3}>
+            Article 11 : Loi Applicable et attribution de juridiction
+          </h3>
           <p>
             La loi française sera seule applicable au présent contrat, à
             l’exclusion, d’une part, des règles de conflit prévues par la loi
@@ -354,7 +376,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 12 : Evolution de logiciels tiers</h3>
+          <h3 className={css.container__h3}>
+            Article 12 : Evolution de logiciels tiers
+          </h3>
           <p>
             Le CLIENT se doit d’indiquer au PRESTATAIRE toutes évolutions des
             logiciels tiers qui seraient en lien avec le SITE WEB. Toutes
@@ -364,7 +388,9 @@ export default function page() {
           </p>
         </div>
         <div className={css.definition}>
-          <h3>Article 13 : Evolution de la législation.</h3>
+          <h3 className={css.container__h3}>
+            Article 13 : Evolution de la législation.
+          </h3>
           <p>
             Dans le cas d’une évolution de la législation impliquant des
             modifications pour la mise en conformité du SITE WEB, les frais de

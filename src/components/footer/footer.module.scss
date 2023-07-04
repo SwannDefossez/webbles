@@ -17,6 +17,7 @@
   &__link {
     @include flex(row, space-around, center);
     gap: 2rem;
+    text-align: center;
   }
   &__info {
     @include flex(row, space-around, center);
