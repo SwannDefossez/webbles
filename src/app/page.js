@@ -40,26 +40,26 @@ export default function page() {
             <div className={css.main__text} ref={textRef}>
               <h3>Quoi ?</h3>
               <ul>
-                <li>Création/ refonte de sites internet aux normes W3C</li>
-                <li>applications web, blogs, forum</li>
-                <li>sites e-commerce</li>
+                <li>Création/ refonte de sites internet aux normes W3C*</li>
+                <li>applications web*, blogs, forum</li>
+                <li>sites e-commerce*</li>
                 <li>conseils / création / gestion de catalogues produits</li>
                 <li>boutiques Facebook/ Instagram</li>
                 <li>référencement (SEO, SEA)*</li>
-                <li>optimisation</li>
+                <li>optimisation*</li>
                 <li>
                   communication, création/ gestion de votre présence sur les
-                  réseaux sociaux, page pro google
+                  réseaux sociaux*, page pro google
                 </li>
-                <li>accessibilité</li>
+                <li>accessibilité*</li>
                 <li>montage photo / vidéo</li>
               </ul>
 
               <p>
-                Pour une meilleure optimisation, vitesse et référencement nous
+                Pour une meilleure optimisation*, vitesse et référencement* nous
                 codons entièrement nos sites, pas de wordpress qui alourdit
                 votre hébergement. Pour les boutiques e-commerce nous
-                privilégions Prestashop système de base gratuit.
+                privilégions Prestashop* système de base gratuit.
               </p>
               <p>
                 Avoir un site, une page sur les réseaux sociaux, c’est bien mais
@@ -79,7 +79,7 @@ export default function page() {
               <p>
                 - Bienveillance, simplicité, accompagnement, sont pour nous des
                 valeurs importantes, nous privilégions une collaboration
-                personnalisée
+                personnalisée.
               </p>
 
               <h3>Où ?</h3>
