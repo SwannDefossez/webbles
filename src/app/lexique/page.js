@@ -1,9 +1,66 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import React from "react";
+import React, { useState }  from "react";
 import css from "./lexique.module.scss";
 import ParticleBackground from "../../components/particle/particleBackground";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
+
+import { motion, AnimatePresence } from "framer-motion";
+
+
+const definition = [
+{titre : 'ACCESSIBILITÉ:', desc: '<p>
+l’accessibilité est un ensemble de normes éthiques, de
+recommandations, le double avantage de respecter les standards du
+w3c est que le plus grand nombre pourra naviguer sur votre site et
+que les robots google vont mieux vous référencer dans les résultats
+de recherche.
+</p>
+<p>
+Définition raccourcie de
+https://www.monparcourshandicap.gouv.fr/accessibilite-numerique : Un
+site web accessible est un site qui permet aux personnes en
+situation de handicap d'accéder à ses contenus et ses
+fonctionnalités sans difficulté. Un site accessible permet par
+exemple de :
+</p>
+<ul>
+<li>
+  naviguer avec une synthèse vocale et/ou une plage braille
+  (notamment utilisées par les personnes aveugles et malvoyantes) ;
+</li>
+<li>
+  • personnaliser l’affichage du site selon ses besoins
+  (grossissement des caractères, modification des couleurs, etc.) ;
+</li>
+<li>
+  • naviguer sans utiliser la souris (avec le clavier uniquement,
+  via un écran tactile, à la voix ou tout autre périphérique
+  adapté).
+</li>
+</ul>
+<p>
+Pour cela, le site doit respecter les normes en vigueur lors de sa
+réalisation et de ses mises à jour. Une norme internationale émise
+par le W3C : https://www.w3.org/
+</p>'},
+{titre : 'RÉFÉRENCEMENT', desc: ''},
+{titre : 'NORMES W3C ', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''},
+{titre : '', desc: ''}
+]
+
+
+// const Accordion = ({ i, expanded, setExpanded }) => {
+// const isOpen = i === expanded;
+
 export default function page() {
   return (
     <div className={css.container}>
