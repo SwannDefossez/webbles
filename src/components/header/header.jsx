@@ -189,7 +189,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <a className={css.menu__link} href="/contact#contact">
+              <a className={css.menu__link} href="/contact">
                 Contact
               </a>
             </motion.li>
@@ -203,7 +203,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <a className={css.menu__link} href="/lexique#lexique">
+              <a className={css.menu__link} href="/lexique">
                 Lexique
               </a>
             </motion.li>
