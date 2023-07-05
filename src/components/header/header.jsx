@@ -94,7 +94,7 @@ function header() {
               <Image
                 priority={true}
                 src="/webblestext.png"
-                alt="logo webbles"
+                alt="logo de l'agence webbles"
                 width={548}
                 height={80}
                 className={css.header__webbles}

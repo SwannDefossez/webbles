@@ -13,11 +13,13 @@
     letter-spacing: 0.5rem;
   }
   .contain {
+    @include flex( column, center, center);
     height: 100%;
     padding: 2rem;
     h2,
     .presentation {
       text-align: center;
     }
+    
   }
 }

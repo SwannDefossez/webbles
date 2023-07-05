@@ -54,7 +54,7 @@ const Contact = () => {
               <textarea name="message" className={css.champs__message} />
             </div>
           </div>
-          <input type="submit" value="ENVOYER" className={css.button} />;
+          <input type="submit" value="ENVOYER" className={css.button} />
         </form>
       )}
       {show && <h3>Votre Message a été envoyé.</h3>}

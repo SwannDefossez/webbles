@@ -1,0 +1,81 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.list {
+  @include flex(column, center, center);
+  width: 90%;
+  .collapse {
+    @include flex(column, center, center);
+    flex-basis: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &__label {
+      @include flex(column, center, center);
+      z-index: 51;
+      width: 100%;
+    }
+    &__div {
+      padding: 0.8rem;
+    }
+    &__h3 {
+    }
+  }
+}
+
+.toggle {
+  @include flex(row, center, center);
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 100%;
+  @include md {
+    width: 35vw;
+  }
+  @include xxl {
+    width: 20vw;
+  }
+}
+
+.content {
+  background-color: rgba(66, 66, 66, 0.274);
+  border-radius: 1rem;
+  padding-top: 2rem;
+  border: 2px white solid;
+}
+
+.content_parent {
+  margin-top: -1.8rem;
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.3s;
+  z-index: 50;
+  width: 80vw;
+}
+
+.header1 {
+  background-color: rgb(155, 90, 133);
+}
+.header2 {
+  background-color: rgb(117, 145, 167);
+}
+.header3 {
+  background-color: rgb(83, 180, 158);
+}
+.header4 {
+  background-color: rgb(114, 158, 119);
+}
+.header5 {
+  background-color: rgb(146, 160, 207);
+}
+.header6 {
+  background-color: rgb(235, 113, 113);
+}
+.header7 {
+  background-color: rgb(108, 104, 163);
+}
+.header8 {
+  background-color: rgb(122, 103, 156);
+}
+.header9 {
+  background-color: rgb(160, 105, 104);
+}
