@@ -2,11 +2,10 @@
 "use client";
 import React from "react";
 import css from "./mention.module.scss";
-import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export default function page() {
   return (
     <div>
-      <SecondaryHeader />
+      
       <div className={css.container}>
         <div>
           <h1>Mentions légales</h1>

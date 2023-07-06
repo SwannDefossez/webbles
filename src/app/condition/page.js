@@ -2,13 +2,9 @@
 "use client";
 import React from "react";
 import css from "./condition.module.scss";
-import ParticleBackground from "../../components/particle/particleBackground";
-import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export default function page() {
   return (
     <div className={css.container}>
-      <SecondaryHeader />
-      <ParticleBackground />
       <div className={css.container__content}>
         <h1>Condition générale de vente</h1>
         <h3 className={css.container__h3}>Définitions</h3>

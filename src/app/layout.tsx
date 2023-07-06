@@ -3,17 +3,11 @@ import React from "react";
 import "./globals.scss";
 import { Roboto } from "next/font/google";
 import Footer from "../components/footer/footer";
-import {
-  easeOut,
-  motion,
-  stagger,
-  useAnimate,
-  AnimatePresence,
-} from "framer-motion";
+
 const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
 import GoogleAnalytics from "./GoogleAnalytics";
 import { Metadata } from "next";
-import Transition from "../components/transition/transition";
+
 export const metadata: Metadata = {
   title:
     "Sites internet agence de professionnels du web Webbles, création sites, seo, Cap d'Agde, Agde, Béziers, France",
@@ -26,14 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <GoogleAnalytics />
       <body className={roboto.className}>
-        <motion.div
-        initial={{ opacity: 0,  }}
-        animate={{ opacity: 1,  }}
-        exit={{ opacity: 0,  }}
-        >
-          <Transition />
-          {children}
-        </motion.div>
+        {children}
 
         <Footer />
       </body>
