@@ -59,7 +59,7 @@ export default function page() {
                 Pour une meilleure optimisation*, vitesse et référencement* nous
                 codons entièrement nos sites, pas de wordpress qui alourdit
                 votre hébergement. Pour les boutiques e-commerce nous
-                privilégions Prestashop* système de base gratuit.
+                privilégions Prestashop* logiciel libre.
               </p>
               <p>
                 Avoir un site, une page sur les réseaux sociaux, c’est bien mais

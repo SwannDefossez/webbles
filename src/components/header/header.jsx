@@ -130,8 +130,8 @@ function header() {
         </motion.div>
         <motion.div
           className={css.header__icon}
-          initial={{ y: 0 }}
-          animate={{ y: 70 }}
+          initial={{ y: 0, opacity: 0 }}
+          animate={{ y: 70, opacity: 1 }}
           transition={{
             repeat: Infinity,
             repeatDelay: 1,
@@ -141,13 +141,22 @@ function header() {
         >
           <AiOutlineArrowDown size={90} />
         </motion.div>
-        <Image
-          src="/background.jpg"
-          alt="Photo en Islande de Jonatan Pie"
-          width={1920}
-          height={1080}
+        <motion.div
           className={css.header__bcg}
-        />
+          initial={{ opacity: 0, y: 70 }}
+          animate={{ opacity: 0.5, y: 0 }}
+          transition={{
+            duration: 1.2,
+            ease: easeOut,
+          }}
+        >
+          <Image
+            src="/background.jpg"
+            alt="Photo en Islande de Jonatan Pie"
+            width={1920}
+            height={1080}
+          />
+        </motion.div>
 
         <motion.div
           ref={scope}

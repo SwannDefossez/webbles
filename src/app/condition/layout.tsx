@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contactez-nous pour nous exposer vos projets web",
+  title: "Conditions générales de vente Webbles, agence basée au Cap d'Agde, Agde",
   description:
-    "Site internet, réseaux sociaux, qu'elle que soit votre demande, nous apportons une réponse adaptée personnalisée, Cap d'Agde, Agde",
+    "Afin de collaborer dans de bonnes conditions et vous sécuriser, merci de lire nos conditions générales de vente, elles sont valables pour nos clients au Cap d'Agde, Agde, Béziers, Montpellier ou toute autre partie de la France et Europe",
 };
 
 export default function RootLayout({ children }) {

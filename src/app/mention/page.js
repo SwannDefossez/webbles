@@ -33,9 +33,8 @@ export default function page() {
             L’édition et la direction de la publication du Site est assurée par
             Defossez-Anceaux Swann,
             <br />
-            domiciliée 7 rue de la Marne, dont le numéro de téléphone est
-            0781981002, et l'adresse e-mail swann.defossezanceaux@gmail.com.
-            ci-après l'"Editeur".
+            dont le numéro de téléphone est 07 56 88 98 53, et l'adresse e-mail
+            swann.defossezanceaux@gmail.com. ci-après l'"Editeur".
           </p>
           <h4>ARTICLE 2 - L'HEBERGEUR</h4>
           <p>
