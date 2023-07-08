@@ -10,6 +10,14 @@
   padding-right: 2rem;
   z-index: 9;
   position: relative;
+  &__webbles {
+    transition: 0.5s;
+    filter: hue-rotate(0deg);
+    &:hover {
+      transition: 0.5s;
+      filter: hue-rotate(154deg);
+    }
+  }
 }
 
 .nav {

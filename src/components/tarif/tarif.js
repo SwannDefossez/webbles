@@ -68,7 +68,7 @@ function tarif() {
           <div className={css.card__content}>
             <div>
               <h4>
-                Comme un blog, forum, service communication privé d’entreprise,
+                Exemple un blog, forum, service communication privé d’entreprise,
                 Pages comportant un front et un back qui permet de gérer les
                 bases de données, les authentifications des membres
               </h4>

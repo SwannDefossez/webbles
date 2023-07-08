@@ -18,7 +18,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <GoogleAnalytics />
+      <head><meta name="google-site-verification" content="IqyPXTsK53kmA6xiuzbIfK9AX49dB_qxzRAcatLfkSs" /><GoogleAnalytics /></head>
+      
       <body className={roboto.className}>
         {children}
 

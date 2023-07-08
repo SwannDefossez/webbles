@@ -1,12 +1,13 @@
 "use client";
 import { Metadata } from "next";
 import { motion } from "framer-motion";
-import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 import ParticleBackground from "../../components/particle/particleBackground";
+import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
+
 export const metadata: Metadata = {
-  title: "Contactez-nous pour nous exposer vos projets web",
+  title: "tarifs de base de l'agence Webbles",
   description:
-    "Site internet, réseaux sociaux, qu'elle que soit votre demande, nous apportons une réponse adaptée personnalisée, Cap d'Agde, Agde",
+    "Site vitrine, e-commerce, application web, maintenance, communication réseaux sociaux, emailing, contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde",
 };
 
 export default function RootLayout({ children }) {

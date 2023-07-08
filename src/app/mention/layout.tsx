@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import { motion } from "framer-motion";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export const metadata: Metadata = {
-  title: "Contactez-nous pour nous exposer vos projets web",
+  title: "Mentions légales de l'agence Webbles",
   description:
-    "Site internet, réseaux sociaux, qu'elle que soit votre demande, nous apportons une réponse adaptée personnalisée, Cap d'Agde, Agde",
+    "Site internet, site vitrine, e-commerce, les mentions légals sont obligatoires, ainsi que les cgv et les RGPD quand nous collectons vos données",
 };
 
 export default function RootLayout({ children }) {

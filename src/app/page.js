@@ -12,6 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function page() {
+
   const textRef = useRef(null);
   const parentRef = useRef(null);
   useEffect(() => {
@@ -94,6 +95,7 @@ export default function page() {
 
               <p>
                 * : voir <a href="/lexique">Lexique</a>
+
               </p>
             </div>
           </div>

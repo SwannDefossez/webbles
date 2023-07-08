@@ -20,7 +20,7 @@ export default function page() {
             </div>
             <div className={css.contact__phone}>
               <AiOutlinePhone size={32} />
-              <a href={"tel:+33627599275"}>06 27 59 92 75</a>
+              <a href={"tel:+33756889853"}>07 56 88 98 53</a>
             </div>
           </div>
         </div>
