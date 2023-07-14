@@ -13,6 +13,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <div style={{ backgroundColor: "#0b0a14" }}>
+          <head>
+      <title>tarifs de base de l&apos;agence Webbles</title>
+    <meta name="description" content="Site vitrine, e-commerce, application web, maintenance, communication réseaux sociaux, emailing, contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde"/>
+      </head>
       <ParticleBackground />
       <SecondaryHeader />
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>

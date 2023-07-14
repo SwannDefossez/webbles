@@ -4,6 +4,7 @@ import React from "react";
 import css from "./condition.module.scss";
 export default function page() {
   return (
+    
     <div className={css.container}>
       <div className={css.container__content}>
         <h1>Condition générale de vente</h1>

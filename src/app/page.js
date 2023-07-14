@@ -11,6 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function page() {
 
   const textRef = useRef(null);
@@ -33,6 +34,7 @@ export default function page() {
     );
   }, []);
   return (
+    
     <div>
       <Header />
       <div className={css.home}>

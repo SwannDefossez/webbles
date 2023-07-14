@@ -6,19 +6,19 @@ import Footer from "../components/footer/footer";
 
 const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
 import GoogleAnalytics from "./GoogleAnalytics";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title:
-    "Sites internet agence de professionnels du web Webbles, création sites, seo, Cap d'Agde, Agde, Béziers, France",
-  description:
-    "Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France",
-};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <head><meta name="google-site-verification" content="IqyPXTsK53kmA6xiuzbIfK9AX49dB_qxzRAcatLfkSs" /><GoogleAnalytics /></head>
+      <head>
+      <title>Sites internet agence de professionnels du web Webbles, création sites, SEO, Cap d&apos;Agde, Agde, Béziers, France</title>
+    <meta name="description" content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France"/>
+        <GoogleAnalytics />
+      <meta name="google-site-verification" content="IqyPXTsK53kmA6xiuzbIfK9AX49dB_qxzRAcatLfkSs" />
+      </head>
+  
+      
+      
       
       <body className={roboto.className}>
         {children}

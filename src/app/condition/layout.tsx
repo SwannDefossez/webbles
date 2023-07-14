@@ -1,18 +1,23 @@
 "use client";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import { motion } from "framer-motion";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
-export const metadata: Metadata = {
-  title:
-    "Conditions générales de vente Webbles, agence basée au Cap d'Agde, Agde",
-  description:
-    "Afin de collaborer dans de bonnes conditions et vous sécuriser, merci de lire nos conditions générales de vente, elles sont valables pour nos clients au Cap d'Agde, Agde, Béziers, Montpellier ou toute autre partie de la France et Europe",
-};
+// export const metadata: Metadata = {
+//   title:
+//     "Conditions générales de vente Webbles, agence basée au Cap d'Agde, Agde",
+//   description:
+//     "Afin de collaborer dans de bonnes conditions et vous sécuriser, merci de lire nos conditions générales de vente, elles sont valables pour nos clients au Cap d'Agde, Agde, Béziers, Montpellier ou toute autre partie de la France et Europe",
+// };
 
 export default function RootLayout({ children }) {
   return (
     <div style={{ backgroundColor: "#0b0a14" }}>
+      <head>
+      <title>Conditions générales de vente Webbles, agence basée au Cap d&apos;Agde, Agde</title>
+    <meta name="description" content="Afin de collaborer dans de bonnes conditions et vous sécuriser, merci de lire nos conditions générales de vente, elles sont valables pour nos clients au Cap d'Agde, Agde, Béziers, Montpellier ou toute autre partie de la France et Europe"/>
+        
       
+      </head>
       <SecondaryHeader />
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         {children}
