@@ -7,7 +7,7 @@ import ParticleBackground from "../components/particle/particleBackground";
 import Header from "../components/header/header";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import Head from 'next/head'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,7 +35,10 @@ export default function page() {
     
       
     <div>
-      
+      <head>
+        <title>Sites internet agence de professionnels du web Webbles, création sites, SEO, Cap d'Agde, Agde, Béziers, France</title>
+        <meta name="description" content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France"/>
+      </head>
         <Header />
         <div className={css.home}>
           <div className={css.main__content}>
