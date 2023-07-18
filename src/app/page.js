@@ -7,7 +7,6 @@ import ParticleBackground from "../components/particle/particleBackground";
 import Header from "../components/header/header";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Head from 'next/head'
 
 gsap.registerPlugin(ScrollTrigger);
 

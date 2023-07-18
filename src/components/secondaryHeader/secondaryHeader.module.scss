@@ -83,21 +83,18 @@
   &__link {
     font-size: 3rem;
     color: white;
-    cursor: none;
     text-decoration: none;
+    &:hover {
+      transition: all 0.25s ease;
+      color: rgb(167, 125, 112);
+    }
   }
   &__li {
     @include flex(column, center, center);
     width: 20rem;
     transition: all 0.25s ease;
-    transform: scale(1);
     list-style-type: none;
   }
-}
-
-.menu__li:hover {
-  transition: all 0.25s ease;
-  transform: scale(1.3);
 }
 
 .fixed {

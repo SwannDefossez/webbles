@@ -97,12 +97,7 @@ function secondaryHeader() {
       <motion.div ref={scope} className={` ${isOpen ? css.wrapper : css.none}`}>
         <motion.ul onClick={() => setOpen(false)} className={css.menu}>
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
+           
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/">
@@ -110,12 +105,8 @@ function secondaryHeader() {
             </a>
           </motion.li>
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
+           
+           
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/tarif">
@@ -123,12 +114,8 @@ function secondaryHeader() {
             </a>
           </motion.li>
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
+            
+          
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/contact#contact">
@@ -137,12 +124,6 @@ function secondaryHeader() {
           </motion.li>
 
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/lexique#lexique">
