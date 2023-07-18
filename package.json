@@ -7,7 +7,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "build-static": "next build && npm run build-static-repair-index && npm run build-static-repair-404 && npm run build-static-repair-tarif && npm run build-static-repair-mention && npm run build-static-repair-lexique && npm run build-static-repair-contact && npm run build-static-repair-condition && npm run build-static-repair-out404",
+
+
+
+    "build-static-repair-index": "replace-in-files --string \"/_next/static\" --replacement \"./_next/static\" out/index.html",
+    "build-static-repair-404": "replace-in-files --string \"/_next/static\" --replacement \"./_next/static\" out/404.html",
+    "build-static-repair-tarif": "replace-in-files --string \"/_next/static\" --replacement \"../_next/static\" out/tarif/index.html",
+    "build-static-repair-mention": "replace-in-files --string \"/_next/static\" --replacement \"../_next/static\" out/mention/index.html",
+    "build-static-repair-lexique": "replace-in-files --string \"/_next/static\" --replacement \"../_next/static\" out/lexique/index.html",
+    "build-static-repair-contact": "replace-in-files --string \"/_next/static\" --replacement \"../_next/static\" out/contact/index.html",
+    "build-static-repair-condition": "replace-in-files --string \"/_next/static\" --replacement \"../_next/static\" out/condition/index.html",
+    "build-static-repair-out404": "replace-in-files --string \"/_next/static\" --replacement \"../_next/static\" out/404/index.html"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -16,13 +28,14 @@
     "framer-motion": "^10.12.21",
     "gsap": "^3.12.2",
     "hamburger-react": "^2.5.0",
-    "next": "^13.4.10",
+    "next": "^13.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-intersection-observer": "^9.5.2",
     "react-router-dom": "^6.14.1",
     "react-tsparticles": "^2.11.0",
+    "replace-in-files-cli": "^2.2.0",
     "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.63.6",
     "swiper": "^10.0.4",

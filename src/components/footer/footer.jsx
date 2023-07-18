@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import css from "./footer.module.scss";
 function footer() {

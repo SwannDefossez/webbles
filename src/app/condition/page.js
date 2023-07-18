@@ -1,10 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import css from "./condition.module.scss";
+import css from "./condition.module.scss"
 export default function page() {
   return (
-    
     <div className={css.container}>
       <div className={css.container__content}>
         <h1>Condition générale de vente</h1>

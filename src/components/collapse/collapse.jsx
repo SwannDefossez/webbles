@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useRef } from "react";
 import css from "./collapse.module.scss";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";

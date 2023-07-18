@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect } from "react";
 import css from "./secondaryHeader.module.scss";
@@ -5,47 +6,12 @@ import { motion, stagger, useAnimate } from "framer-motion";
 import Hamburger from "hamburger-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
-function useMenuAnimation(isOpen) {
-  const [scope, animate] = useAnimate();
-  useEffect(() => {
-    animate(
-      "ul",
-      {
-        clipPath: isOpen
-          ? "inset(0% 0% 0% 0% round 10px)"
-          : "inset(10% 50% 90% 50% round 10px)",
-      },
-      {
-        type: "spring",
-        bounce: 0,
-        duration: 0.5,
-      }
-    );
 
-    animate(
-      "li",
-      isOpen
-        ? { opacity: 1, scale: 1, filter: "blur(0px)" }
-        : { opacity: 0, scale: 0.3, filter: "blur(20px)" },
-      {
-        duration: 0.2,
-        delay: isOpen ? staggerMenuItems : 0,
-      }
-    );
-
-    return () => {};
-  }, [animate, isOpen]);
-
-  return scope;
-}
 function secondaryHeader() {
   const pathname = usePathname();
   //burger open/close
   const [isOpen, setOpen] = useState(false);
 
-  // animation menu li
-  const scope = useMenuAnimation(isOpen);
   return (
     <div className={css.header}>
       <a href="/">
@@ -93,15 +59,9 @@ function secondaryHeader() {
         </ul>
       </nav>
 
-      <motion.div ref={scope} className={` ${isOpen ? css.wrapper : css.none}`}>
+      <motion.div className={` ${isOpen ? css.wrapper : css.none}`}>
         <motion.ul onClick={() => setOpen(false)} className={css.menu}>
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/">
@@ -109,12 +69,6 @@ function secondaryHeader() {
             </a>
           </motion.li>
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/tarif">
@@ -122,12 +76,6 @@ function secondaryHeader() {
             </a>
           </motion.li>
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/contact#contact">
@@ -136,12 +84,6 @@ function secondaryHeader() {
           </motion.li>
 
           <motion.li
-            onHoverStart={() => setLiHovered(true)}
-            onHoverEnd={() => setLiHovered(false)}
-            whileHover={{
-              scale: 1.25,
-              transition: { duration: 0.1 },
-            }}
             className={css.menu__li}
           >
             <a className={css.menu__link} href="/lexique#lexique">
