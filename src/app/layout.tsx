@@ -6,7 +6,7 @@ import Footer from "../components/footer/footer";
 
 const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
 import Head from 'next/head'
-import GoogleAnalytics from "./googleanalytics";
+import GoogleAnalytics from "./googleanalytics.tsx";
 
 
 
