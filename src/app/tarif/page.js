@@ -3,6 +3,7 @@ import React from "react";
 import css from "./tarif.module.scss";
 import Tarif from "../../components/tarif/tarif";
 
+
 export default function page() {
   return (
     <div>

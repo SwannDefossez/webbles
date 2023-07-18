@@ -1,6 +1,6 @@
-"use client";
+
 import { Metadata } from "next";
-import { motion } from "framer-motion";
+
 import ParticleBackground from "../../components/particle/particleBackground";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export const metadata: Metadata = {
@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
     
       <ParticleBackground />
       <SecondaryHeader />
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <div>
         {children}
-      </motion.div>
+      </div>
     </div>
   );
 }

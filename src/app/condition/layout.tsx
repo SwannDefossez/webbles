@@ -1,6 +1,6 @@
-"use client";
+
 import { Metadata } from "next";
-import { motion } from "framer-motion";
+
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export const metadata: Metadata = {
   title:
@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <div style={{ backgroundColor: "#0b0a14" }}>
       <SecondaryHeader />
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <div>
         {children}
-      </motion.div>
+      </div>
     </div>
   );
 }
