@@ -1,13 +1,6 @@
 "use client";
 import Script from "next/script";
-// import { Metadata } from "next";
-// export const metadata : Metadata = {
- 
-//   title:
-//     "Sites internet agence de professionnels du web Webbles, création sites, seo, Cap d'Agde, Agde, Béziers, France",
-//   description:
-//     'Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s\'adapte à vos besoins. Agde, Cap d\'Agde, Béziers, Pézenas, Sète et environs ou toute la France',
-// };
+
 
 const GoogleAnalytics = () => {
   return (

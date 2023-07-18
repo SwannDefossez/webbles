@@ -1,8 +1,8 @@
 "use client";
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import css from "./secondaryHeader.module.scss";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 import Hamburger from "hamburger-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
