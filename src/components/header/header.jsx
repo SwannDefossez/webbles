@@ -83,7 +83,7 @@ function header() {
             scale: 1.0,
             transition: { duration: 0.1 },
           }}
-          className={css.header__h1}
+          className={css.header__title}
         >
           <a className={css.header__link} href="/">
             <motion.div
@@ -101,13 +101,13 @@ function header() {
               />
             </motion.div>
 
-            <motion.h2
+            <motion.h1
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75 }}
             >
               Agence Web Digitale
-            </motion.h2>
+            </motion.h1>
           </a>
         </motion.div>
 
@@ -144,7 +144,7 @@ function header() {
         <motion.div
           className={css.header__bcg}
           initial={{ opacity: 0, y: 70 }}
-          animate={{ opacity: 0.5, y: 0 }}
+          animate={{ opacity: 0.80, y: 0 }}
           transition={{
             duration: 1.2,
             ease: easeOut,

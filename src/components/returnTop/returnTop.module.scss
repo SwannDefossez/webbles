@@ -1,0 +1,14 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.arrow {
+    position: fixed;
+    color: white !important;
+   bottom: 2rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 0.75rem;
+    border-radius: 50%;
+    z-index: 99;
+    
+}

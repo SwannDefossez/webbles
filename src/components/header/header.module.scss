@@ -18,7 +18,7 @@
     color: white;
     text-decoration: none;
   }
-  &__h1 {
+  &__title {
     @include flex(row, center, center);
     width: 15rem;
     z-index: 2;
@@ -40,7 +40,6 @@
   &__bcg {
     position: absolute;
     z-index: 1;
-    opacity: 0.5;
   }
   &__webbles {
     z-index: 50;
@@ -60,9 +59,9 @@
 
 
 .header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   @include md {
-    font-size: 8vw;
+    font-size: 2vw;
   }
 }
 
