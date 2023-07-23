@@ -50,14 +50,31 @@ export default function page() {
     <div>
       <head>
         <title>
-          Webbles, agence web, création de 
-          sites internet, SEO, réferencement, Cap d'Agde, Agde, Béziers, France
+          Webbles, agence web, création de sites internet, SEO, réferencement,
+          Cap d'Agde, Agde, Béziers, France
         </title>
         <meta
           name="description"
           content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France"
         />
-        <link rel="canonical" href="https://webbles.fr" />
+        <link rel="canonical" href="https://webbles.fr/" />
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
+        <meta property="og:title" content="Webbles, agence web, création de 
+          sites internet, SEO, réferencement, Cap d'Agde, Agde, Béziers, France" />
+      <meta property="og:description" content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Webbles" />
+      <meta property="og:url" content="https://webbles.fr" />
+      
+      
+        <meta name="twitter:image" content="<generated>" />
+        <meta name="twitter:image:type" content="<generated>" />
+        <meta name="twitter:image:width" content="<generated>" />
+        <meta name="twitter:image:height" content="<generated>" />
+        
       </head>
       <Header />
       <div className={css.home}>
