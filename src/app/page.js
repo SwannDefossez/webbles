@@ -50,13 +50,14 @@ export default function page() {
     <div>
       <head>
         <title>
-          Sites internet agence de professionnels du web Webbles, création
-          sites, SEO, Cap d'Agde, Agde, Béziers, France
+          Webbles, agence web, création de 
+          sites internet, SEO, réferencement, Cap d'Agde, Agde, Béziers, France
         </title>
         <meta
           name="description"
           content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France"
         />
+        <link rel="canonical" href="https://webbles.fr" />
       </head>
       <Header />
       <div className={css.home}>
