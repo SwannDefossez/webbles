@@ -58,10 +58,11 @@ export default function page() {
           content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France"
         />
         <link rel="canonical" href="https://webbles.fr/" />
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
+        <meta property="og:image" content="./opengraph-image.jpg" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="Logo agence Webbles" />
         <meta property="og:title" content="Webbles, agence web, création de 
           sites internet, SEO, réferencement, Cap d'Agde, Agde, Béziers, France" />
       <meta property="og:description" content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France" />
@@ -70,10 +71,10 @@ export default function page() {
       <meta property="og:url" content="https://webbles.fr" />
       
       
-        <meta name="twitter:image" content="<generated>" />
-        <meta name="twitter:image:type" content="<generated>" />
-        <meta name="twitter:image:width" content="<generated>" />
-        <meta name="twitter:image:height" content="<generated>" />
+        <meta name="twitter:image" content="./twitter-image.jpg" />
+        <meta name="twitter:image:type" content="image/jpg" />
+        <meta name="twitter:image:width" content="300" />
+        <meta name="twitter:image:height" content="300" />
         
       </head>
       <Header />
