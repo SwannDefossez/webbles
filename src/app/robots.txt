@@ -1,3 +1,4 @@
+Sitemap: https://www.webbles.fr/sitemap.xml
 User-agent: *
 Disallow:
 User-agent: Googlebot

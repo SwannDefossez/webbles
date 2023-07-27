@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <div style={{ backgroundColor: "#0b0a14" }}>
-      <link rel="canonical" href="https://webbles.fr/lexique/" />
+      <link rel="canonical" href="https://www.webbles.fr/lexique/" />
       <ParticleBackground />
       <SecondaryHeader />
       <div>

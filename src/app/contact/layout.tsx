@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     
     <div style={{ backgroundColor: "#0b0a14" }}>
-    <link rel="canonical" href="https://webbles.fr/contact/" />
+    <link rel="canonical" href="https://www.webbles.fr/contact/" />
       <ParticleBackground />
       <SecondaryHeader />
       <div>

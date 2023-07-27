@@ -57,7 +57,7 @@ export default function page() {
           name="description"
           content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France"
         />
-        <link rel="canonical" href="https://webbles.fr/" />
+        <link rel="canonical" href="https://www.webbles.fr/" />
         <meta property="og:image" content="./opengraph-image.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="300" />
@@ -68,7 +68,7 @@ export default function page() {
       <meta property="og:description" content="Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Webbles" />
-      <meta property="og:url" content="https://webbles.fr" />
+      <meta property="og:url" content="https://www.webbles.fr" />
       
       
         <meta name="twitter:image" content="./twitter-image.jpg" />
