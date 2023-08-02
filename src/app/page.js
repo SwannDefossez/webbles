@@ -26,6 +26,8 @@ import {
 gsap.registerPlugin(ScrollTrigger);
 export default function page() {
   const textRef = useRef(null);
+  const ul1Ref = useRef(null);
+  const ul2Ref = useRef(null);
   const parentRef = useRef(null);
   const arrowRef = useRef(null);
   useEffect(() => {
@@ -40,6 +42,35 @@ export default function page() {
           trigger: parentRef.current,
           start: "top bottom", // when the top of the trigger hits the top of the viewport
           end: "+=700",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ul2Ref.current,
+      { opacity: 0, x: 100 },
+      {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+          trigger: parentRef.current,
+          start: "top +=400", // when the top of the trigger hits the top of the viewport
+          end: "+=400",
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      ul1Ref.current,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+          trigger: parentRef.current,
+          start: "top +=400", // when the top of the trigger hits the top of the viewport
+          end: "+=400",
           scrub: true,
         },
       }
@@ -70,7 +101,7 @@ export default function page() {
               <div className={css.main__services}>
                 <h3>Nos Services</h3>
                 <div className={css.main__list}>
-                  <ul className={css.main__ul1}>
+                  <ul ref={ul1Ref} className={css.main__ul1}>
                     <li>
                       Création/ refonte de sites internet aux normes W3C*
                       <AiOutlineCode className={css.main__icons} />
@@ -94,7 +125,7 @@ export default function page() {
                       <AiOutlineShop className={css.main__icons} />
                     </li>
                   </ul>
-                  <ul className={css.main__ul2}>
+                  <ul ref={ul2Ref} className={css.main__ul2}>
                     <li>
                       Référencement (SEO, SEA)*
                       <MdChecklist className={css.main__icons} />
@@ -121,8 +152,12 @@ export default function page() {
                 <p>
                   * : voir <a href="/lexique">Lexique</a>
                 </p>
-                <h4>N'hésitez pas à nous contacter pour exposer votre projet.</h4>
-                <Link className={css.main__link} href="/contact">Contact</Link>
+                <h4>
+                  N'hésitez pas à nous contacter pour exposer votre projet.
+                </h4>
+                <Link className={css.main__link} href="/contact">
+                  Contact
+                </Link>
               </div>
               <div>
                 <h3>Nos Valeurs</h3>
