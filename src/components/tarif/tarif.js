@@ -5,7 +5,7 @@ import css from "./tarif.module.scss";
 function tarif() {
   return (
     <div className={css.tarif} id="tarifs">
-      <h2>Nos Tarifs</h2>
+      <h1>Nos Tarifs</h1>
       <article className={css.container}>
         <div className={css.card}>
           <header className={`${css.card__header} ${css.header1}`}>

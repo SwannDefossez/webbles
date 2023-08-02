@@ -5,16 +5,37 @@ import ParticleBackground from "../../components/particle/particleBackground";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export const metadata: Metadata = {
   title:
-    "Contactez Webbles pour nous exposer vos projets web, notre équipe de spécialistes ",
+    "Contactez Webbles pour nous exposer vos projets web, notre équipe de spécialistes",
   description:
-    "Site internet, réseaux sociaux, qu'elle que soit votre demande, nous apportons une réponse adaptée personnalisée, nous nous déplaçons dans les alentours Cap d'Agde, Agde, Vias, Marseillan, Sète, Béziers, Montpellier, Hérault, Occitanie sud, exceptionnellement le reste de la France, L'Europe, sinon nous gérons en Visio et autres moyens",
+    "Site internet, réseaux sociaux, qu'elle que soit votre demande, nous apportons une réponse adaptée personnalisées",
 };
 
 export default function RootLayout({ children }) {
   return (
     
     <div style={{ backgroundColor: "#0b0a14" }}>
-    <link rel="canonical" href="https://www.webbles.fr/contact/" />
+    <link rel="canonical" href="https://www.webbles.fr/contact" />
+    <meta property="og:image" content="./opengraph-image.jpg" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="Logo agence Webbles" />
+        <meta
+          property="og:title"
+          content="Contactez Webbles pour nous exposer vos projets web, notre équipe de spécialistes"
+        />
+        <meta
+          property="og:description"
+          content="Site internet, réseaux sociaux, qu'elle que soit votre demande, nous apportons une réponse adaptée personnalisées"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Webbles" />
+        <meta property="og:url" content="https://www.webbles.fr/contact" />
+
+        <meta name="twitter:image" content="./twitter-image.jpg" />
+        <meta name="twitter:image:type" content="image/jpg" />
+        <meta name="twitter:image:width" content="300" />
+        <meta name="twitter:image:height" content="300" />
       <ParticleBackground />
       <SecondaryHeader />
       <div>

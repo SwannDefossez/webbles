@@ -30,10 +30,12 @@ export default function page() {
           <h4>ARTICLE 1 - L'EDITEUR</h4>
           <p>
             L’édition et la direction de la publication du Site est assurée par
-            Defossez-Anceaux Swann,
+            Defossez-Anceaux Swann, (EI)
             <br />
             dont le numéro de téléphone est 07 56 88 98 53, et l'adresse e-mail
-            swann.defossezanceaux@gmail.com. ci-après l'"Editeur".
+            contact@webbles.fr . ci-après l'"Editeur".
+            CHE DES 7 FONDS
+            34300 AGDE
           </p>
           <h4>ARTICLE 2 - L'HEBERGEUR</h4>
           <p>

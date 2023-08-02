@@ -4,7 +4,7 @@
 .tarif {
   @include flex(column, center, center);
   gap: 5rem;
-  & h2 {
+  & h1 {
     letter-spacing: 0.7rem;
   }
 }

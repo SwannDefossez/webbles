@@ -15,25 +15,130 @@
     z-index: 5;
     @include flex(column, space-evenly, center);
     width: 80%;
-    font-size: 20px;
+    font-size: 18px;
     @include xl {
-      font-size: 25px;
+      font-size: 20px;
     }
-    gap: 0.5rem;
+    gap: 2rem;
     & h3,
     & a {
       color: rgb(187, 110, 110);
     }
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10rem;
+    margin-top: 7rem;
     line-height: 40px;
+  }
+  &__localisation {
+    margin-top: 10rem;
   }
   &__content {
     @include flex(column, flex-start, center);
     width: 100%;
-    margin-bottom: 20rem;
-    gap: 25vw;
+    margin-bottom: 0rem;
+    gap: 10vw;
     z-index: 5;
+    & h3 {
+      text-align: center;
+    }
+  }
+  &__services {
+    @include flex(column, center, center);
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.438);
+    margin-bottom: 7rem;
+    width: 100vw;
+    @include xxl {
+      width: 90vw;
+    }
+    & h4 {
+      padding: 1rem;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 300;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: white !important;
+    border: 2px rgb(187, 110, 110) solid;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    width: 8rem;
+    text-align: center;
+    transition: 0.4s all ease;
+    &:hover {
+      transition: 0.4s all ease;
+      background-color: rgb(187, 110, 110);
+    }
+  }
+  &__icons {
+    min-width: 20px;
+    width: 20px;
+    height: 100%;
+    color: orange;
+    border: 2px orange solid;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: 0.5s all;
+    &:hover {
+      width: 35px;
+      transition: 0.5s all;
+      color: rgb(187, 110, 110);
+      border: 2px rgb(187, 110, 110) solid;
+    }
+    @include xl {
+      width: 30px;
+    }
+  }
+  &__list {
+    @include flex(column, flex-end, center);
+    font-size: 18px;
+    line-height: 30px;
+
+    @include xl {
+      @include flex(row, flex-end, center);
+      font-size: 22px;
+    }
+    @include xxl {
+      gap: 2rem;
+    }
+  }
+  &__ul1 {
+    @include flex(column, flex-end, flex-start);
+    padding: 1rem;
+    gap: 2rem;
+    @include sm {
+      width: 80%;
+    }
+    @include xl {
+      @include flex(column, flex-end, flex-end);
+    }
+    & li {
+      @include flex(row-reverse, flex-end, center);
+      @include xl {
+        @include flex(row, flex-end, center);
+      }
+      gap: 1rem;
+      @include xxl {
+        gap: 3rem;
+      }
+    }
+  }
+  &__ul2 {
+    @include flex(column, flex-end, flex-start);
+    padding: 1rem;
+    gap: 2rem;
+    @include sm {
+      width: 80%;
+    }
+    & li {
+      @include flex(row-reverse, flex-end, center);
+      gap: 1rem;
+      @include xxl {
+        gap: 3rem;
+      }
+    }
   }
 }

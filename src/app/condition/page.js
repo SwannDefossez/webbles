@@ -9,15 +9,14 @@ export default function page() {
         <h1>Condition générale de vente</h1>
         <h3 className={css.container__h3}>Définitions</h3>
         <p className={css.presentation}>
-          Le Prestataire : NOM est une société dont le siège social est situé
-          ….., immatriculée au registre du commerce et des sociétés de …. sous
-          le numéro …... Dans les présentes conditions générales de vente, est
+          Le Prestataire : Webbles est une entreprise individuelle dont le siège social est situé
+          CHE DES 7 FONDS 34300 AGDE, SIRET: 97757184300019 . Dans les présentes conditions générales de vente, est
           dénommée le client ou le prospect le CLIENT. Les présentes conditions
           générales de vente sont ci-après dénommées « les Conditions Générales
           ». Pour l'interprétation et la mise en œuvre des présentes Conditions
           Générales, il est convenu que les termes ci-après seront définis de la
           façon suivante : Prestation : désigne ci-après l'objet de la vente
-          effectuée par NOM . La prestation peut désigner un ensemble de
+          effectuée par Webbles . La prestation peut désigner un ensemble de
           prestations de services tel qu'un conseil, une mise à disposition d'un
           savoir-faire, une prestation intellectuelle, la conception d'un site
           web, d’un extranet ou d'une application métier, etc. Site Web ou
@@ -30,7 +29,7 @@ export default function page() {
           comptables pour une solution de comptabilité, etc. Sauf mention
           contraire, la fourniture des sources est à la charge du CLIENT. Cahier
           des charges : désigne le document fourni par le CLIENT, ou réalisé en
-          collaboration avec … contre rémunération, décrivant le plus
+          collaboration avec Webbles contre rémunération, décrivant le plus
           explicitement possible le contenu de la prestation attendue et des
           éventuelles contraintes et spécificités concernant les conditions
           techniques de production, d'exploitation et de qualité d'une
@@ -61,7 +60,7 @@ export default function page() {
             réglementaire, jurisprudentielle et/ou technique. LE PRESTATAIRE
             prévient, dans la mesure du possible, ses CLIENTS de toute
             modification de ses Conditions Générales, soit sur la page d'accueil
-            de son site Internet (accessible à l'URL suivante ….. soit par le
+            de son site Internet (accessible à l'URL suivante https://www.webbles.fr/ soit par le
             biais d'un affichage au siège social (situé à l'adresse indiquée
             dans le préambule). L'actualisation ne concerne en aucun cas les
             prestations déjà exécutées ou en cours d'exécution, sauf pour celles

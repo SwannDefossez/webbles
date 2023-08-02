@@ -10,7 +10,7 @@ export default function page() {
     <div className={css.container}>
       <div className={css.contain}>
         <div className={css.headLexique}>
-          <h2>Lexique</h2>
+          <h1>Lexique</h1>
           <p className={css.presentation}>
             Afin de vous faciliter la compréhension de ce que nous vous
             proposons, voici un lexique, pour les personnes les plus aguerries,
