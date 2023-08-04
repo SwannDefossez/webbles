@@ -57,7 +57,6 @@
   }
 }
 
-
 .header h1 {
   font-size: 3rem;
   @include md {
@@ -75,12 +74,8 @@
   pointer-events: none;
   mix-blend-mode: difference;
   z-index: 999;
+  transform-origin: 25px 25px;
 }
-
-// .header__burger:hover ~ .cursor {
-//   transition: all 0.2s ease;
-//   transform: scale(5);
-// }
 
 .header:hover > .cursor {
   opacity: 1;
@@ -136,7 +131,6 @@
 .absolute {
   position: absolute;
 }
-
 
 //crash sur le navigateur OperaGx pour des raisons inconnus
 // .none {

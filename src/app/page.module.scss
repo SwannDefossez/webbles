@@ -14,12 +14,13 @@
     position: relative;
     z-index: 5;
     @include flex(column, space-evenly, center);
-    width: 80%;
     font-size: 18px;
     @include xl {
       font-size: 20px;
     }
-    gap: 2rem;
+    & p {
+      @include flex(row, center, center);
+    }
     & h3,
     & a {
       color: rgb(187, 110, 110);
@@ -28,9 +29,6 @@
     margin-right: auto;
     margin-top: 7rem;
     line-height: 40px;
-  }
-  &__localisation {
-    margin-top: 10rem;
   }
   &__content {
     @include flex(column, flex-start, center);
@@ -42,9 +40,8 @@
       text-align: center;
     }
   }
-  &__services {
+  &__container {
     @include flex(column, center, center);
-    padding: 2rem;
     border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.438);
     margin-bottom: 7rem;
@@ -142,4 +139,77 @@
       }
     }
   }
+}
+
+.valeurs {
+  width: 100vw;
+  @include xxl {
+    width: 90vw;
+  }
+  &__title {
+    @include flex(column, center, center);
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  & article {
+    @include flex(column, center, center);
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.438);
+    margin-bottom: 2rem;
+    gap: 5rem;
+
+    @include md {
+      @include flex(row, center, center);
+    }
+    & p {
+      display: flex;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      @include md {
+        text-align: left;
+        line-height: 30px;
+        width: 50%;
+      }
+      @include xl {
+        line-height: 40px;
+      }
+    }
+  }
+  &__image {
+    width: 80vw;
+    max-width: 20rem;
+    height: 100%;
+    @include xl {
+      max-width: 20rem;
+    }
+  }
+}
+
+.localisation {
+  width: 100vw;
+  @include xxl {
+    width: 90vw;
+  }
+  margin-top: 10rem;
+  &__content {
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.438);
+    margin-bottom: 2rem;
+    gap: 5rem;
+    @include flex(column, center, center);
+    & iframe {
+      width: 80vw;
+      height: 50vh;
+      margin-bottom: 3rem;
+      max-width: 50rem;
+    }
+  }
+}
+
+.flexcenter {
+  @include flex(column, center, center);
 }
