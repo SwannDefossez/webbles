@@ -5,7 +5,7 @@
   background-color: #0b0a14;
   color: white;
   height: 100%;
- 
+  min-height: 80.2vh;
   overflow: hidden;
   position: relative;
   & h1 {
@@ -13,13 +13,12 @@
     letter-spacing: 0.5rem;
   }
   .contain {
-    @include flex( column, center, center);
+    @include flex(column, center, center);
     height: 100%;
     padding: 2rem;
     h1,
     .presentation {
       text-align: center;
     }
-    
   }
 }

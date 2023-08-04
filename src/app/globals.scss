@@ -165,6 +165,24 @@ textarea {
   margin: 0; /* 2 */
 }
 
+select {
+  // ...existing styles
+  outline: none;
+  border-radius: 1rem;
+  height: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  width: 90vw;
+  max-width: 30rem;
+  font-size: 20px;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.

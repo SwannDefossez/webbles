@@ -8,6 +8,7 @@ export default function page() {
     <div className={css.container}>
       <div className={css.tarif} id="tarifs">
         <h1>Nos Tarifs</h1>
+        <p>Tarifs à titre indicatif, nous étudions votre projet et votre budget afin de vous proposer les solutions les plus adaptées</p>
         <article className={css.container}>
           <div className={css.card}>
             <header className={`${css.card__header} ${css.header1}`}>

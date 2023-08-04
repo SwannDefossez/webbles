@@ -3,7 +3,7 @@
 import React from "react";
 import css from "./lexique.module.scss";
 import ParticleBackground from "../../components/particle/particleBackground";
-import CollapseList from "../../components/collapse/collapseList";
+import Select from "../../components/select/select";
 
 export default function page() {
   return (
@@ -12,14 +12,13 @@ export default function page() {
         <div className={css.headLexique}>
           <h1>Lexique</h1>
           <p className={css.presentation}>
-            Afin de vous faciliter la compréhension de ce que nous vous
-            proposons, voici un lexique, pour les personnes les plus aguerries,
+            Afin de vous faciliter la compréhension de ce que nous proposons, voici un lexique, pour les personnes les plus aguerries,
             ce lexique va vous paraitre enfantin, imagé, mais c'est justement la
             définition de l'accessibilité* (voir ci-dessous)
           </p>
         </div>
-        <CollapseList />
-      <ParticleBackground />
+        <Select />
+        <ParticleBackground />
       </div>
     </div>
   );

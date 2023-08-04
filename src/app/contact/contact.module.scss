@@ -7,7 +7,6 @@
   width: 100vw;
   overflow: hidden;
   position: relative;
-  min-height: 91vh;
   & h1 {
     margin: 0;
     letter-spacing: 0.5rem;
@@ -20,8 +19,8 @@
   text-align: center;
   z-index: 3;
   position: relative;
-  margin-top: 7rem;
-  margin-bottom: 7.5rem;
+  margin-top: 5.1rem;
+  margin-bottom: 5.1rem;
   @include flex(column, center, center);
   gap: 10vh;
   &__content {

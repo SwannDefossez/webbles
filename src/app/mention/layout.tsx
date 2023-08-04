@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://www.webbles.fr/mention" />
+        <link rel="canonical" href="https://www.webbles.fr/mention/" />
         <meta property="og:image" content="./opengraph-image.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="300" />

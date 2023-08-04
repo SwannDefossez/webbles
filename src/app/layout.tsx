@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <Head>
         <GoogleAnalytics />
-        <link rel="canonical" href="https://www.webbles.fr" />
+        <link rel="canonical" href="https://www.webbles.fr/" />
         <meta property="og:image" content="./opengraph-image.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="300" />

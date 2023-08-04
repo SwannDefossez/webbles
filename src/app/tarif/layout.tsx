@@ -3,16 +3,16 @@ import Head from "next/head";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 
 export const metadata: Metadata = {
-  title: "tarifs de base de l'agence Webbles",
+  title: "Tarifs de base de l'agence Webbles",
   description:
-    "contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde",
+    "Contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde",
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://www.webbles.fr/tarif" />
+        <link rel="canonical" href="https://www.webbles.fr/tarif/" />
         <meta property="og:image" content="./opengraph-image.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="300" />
