@@ -105,9 +105,10 @@
   position: absolute;
 }
 
-.none {
-  display: none;
-}
+//crash sur le navigateur OperaGx pour des raisons inconnus
+// .none {
+//   display: none;
+// }
 
 @-webkit-keyframes AnimationName {
   0% {
