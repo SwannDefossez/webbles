@@ -22,7 +22,10 @@
 
 .nav {
   display: none;
+  position: absolute;
+  right: 4rem;
   @include xl {
+    display: block;
     & h3 {
       letter-spacing: 2px;
       margin: 0;
@@ -34,7 +37,6 @@
         color: #a38d8d;
       }
     }
-    display: block;
     & ul {
       gap: 4rem;
       list-style-type: none;
@@ -47,11 +49,11 @@
   border-bottom: 2px white solid;
 }
 .hamburger {
+  position: absolute;
+  right: 4rem;
   @include flex(row, center, center);
   cursor: pointer;
   z-index: 999;
-  right: 2rem;
-  top: 2rem;
   @include xl {
     display: none;
   }

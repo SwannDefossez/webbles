@@ -1,6 +1,5 @@
-
 import { Metadata } from "next";
-
+import Head from "next/head";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 export const metadata: Metadata = {
   title:
@@ -11,9 +10,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <div style={{ backgroundColor: "#0b0a14" }}>
-      <link rel="canonical" href="https://www.webbles.fr/condition" />
-      <meta property="og:image" content="./opengraph-image.jpg" />
+    <>
+      <Head>
+        <link rel="canonical" href="https://www.webbles.fr/condition" />
+        <meta property="og:image" content="./opengraph-image.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
@@ -34,10 +34,9 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image:type" content="image/jpg" />
         <meta name="twitter:image:width" content="300" />
         <meta name="twitter:image:height" content="300" />
+      </Head>
       <SecondaryHeader />
-      <div>
-        {children}
-      </div>
-    </div>
+      {children}
+    </>
   );
 }

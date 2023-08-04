@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 import css from "./lexique.module.scss";
-
+import ParticleBackground from "../../components/particle/particleBackground";
 import CollapseList from "../../components/collapse/collapseList";
 
 export default function page() {
@@ -19,6 +19,7 @@ export default function page() {
           </p>
         </div>
         <CollapseList />
+      <ParticleBackground />
       </div>
     </div>
   );
