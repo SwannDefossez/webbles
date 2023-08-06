@@ -1,40 +1,47 @@
 import { Metadata } from "next";
-import Head from "next/head";
 import SecondaryHeader from "../../components/secondaryHeader/secondaryHeader";
 
 export const metadata: Metadata = {
   title: "Tarifs de base de l'agence Webbles",
   description:
     "Contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde",
+    openGraph: {
+      type: "website",
+      url: "http://www.webbles.fr/tarif/",
+      title:
+      "tarifs de base de l'agence Webbles",
+      description:
+      "contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde",
+      siteName: "Webbles",
+      images: [
+        {
+          url: "opengraph-image.jpg",
+          type: "image/jpg",
+          alt: "Logo agence Webbles",
+          width: "300",
+          height: "300",
+        },
+      ],
+    },
+    twitter: {
+      images: [
+        {
+          url: "twitter-image.jpg",
+          type: "image/jpg",
+          alt: "Logo agence Webbles",
+          width: "300",
+          height: "300",
+        },
+      ],
+    },
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
-      <Head>
+      <head>
         <link rel="canonical" href="https://www.webbles.fr/tarif/" />
-        <meta property="og:image" content="./opengraph-image.jpg" />
-        <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:image:alt" content="Logo agence Webbles" />
-        <meta
-          property="og:title"
-          content="tarifs de base de l'agence Webbles"
-        />
-        <meta
-          property="og:description"
-          content="contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Webbles" />
-        <meta property="og:url" content="https://www.webbles.fr/tarif" />
-
-        <meta name="twitter:image" content="./twitter-image.jpg" />
-        <meta name="twitter:image:type" content="image/jpg" />
-        <meta name="twitter:image:width" content="300" />
-        <meta name="twitter:image:height" content="300" />
-      </Head>
+      </head>
       <SecondaryHeader />
 
       {children}
