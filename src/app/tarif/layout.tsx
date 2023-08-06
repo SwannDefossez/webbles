@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         },
       ],
     },
-    metadataBase: new URL('https://www.webbles.fr/tarif/'),
+    metadataBase: new URL('https://www.webbles.fr/'),
     alternates: {
       canonical: '/tarif/',
       

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  metadataBase: new URL('https://www.webbles.fr/mention/'),
+  metadataBase: new URL('https://www.webbles.fr/'),
   alternates: {
     canonical: '/mention/',
   },

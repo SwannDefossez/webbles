@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         },
       ],
     },
-    metadataBase: new URL('https://www.webbles.fr/contact/'),
+    metadataBase: new URL('https://www.webbles.fr/'),
     alternates: {
       canonical: '/contact/',
     },
