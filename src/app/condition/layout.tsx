@@ -34,14 +34,15 @@ export const metadata: Metadata = {
         },
       ],
     },
+    metadataBase: new URL('https://www.webbles.fr/condition/'),
+    alternates: {
+      canonical: '/condition/',
+    },
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
-      <head>
-        <link rel="canonical" href="https://www.webbles.fr/condition/" />
-      </head>
       <SecondaryHeader />
       {children}
     </>

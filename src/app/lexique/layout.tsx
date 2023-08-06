@@ -35,15 +35,16 @@ export const metadata: Metadata = {
         },
       ],
     },
+    metadataBase: new URL('https://www.webbles.fr/lexique/'),
+    alternates: {
+      canonical: '/lexique/',
+      
+    },
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
-      <head>
-        <link rel="canonical" href="https://www.webbles.fr/lexique/" />
-      </head>
-      
       <SecondaryHeader />
       {children}
     </>

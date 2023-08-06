@@ -41,6 +41,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+  metadataBase: new URL('https://www.webbles.fr'),
+  alternates: {
+    canonical: '/',
+    
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -48,7 +53,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <head>
         <GoogleAnalytics key="googleAnalytics" />
-        <link rel="canonical" href="https://www.webbles.fr/" key="canonical" />
+        
       </head>
       <body className={roboto.className}>
         {children}

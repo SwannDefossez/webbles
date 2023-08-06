@@ -34,15 +34,15 @@ export const metadata: Metadata = {
         },
       ],
     },
+    metadataBase: new URL('https://www.webbles.fr/contact/'),
+    alternates: {
+      canonical: '/contact/',
+    },
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
-      <head>
-        <link rel="canonical" href="https://www.webbles.fr/contact/" />
-      </head>
-
       <SecondaryHeader />
       {children}
     </>

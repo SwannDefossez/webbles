@@ -32,14 +32,15 @@ export const metadata: Metadata = {
       },
     ],
   },
+  metadataBase: new URL('https://www.webbles.fr/mention/'),
+  alternates: {
+    canonical: '/mention/',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
-      <head>
-        <link rel="canonical" href="https://www.webbles.fr/mention/" />
-      </head>
       <SecondaryHeader />
       {children}
     </>

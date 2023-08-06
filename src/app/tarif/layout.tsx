@@ -34,16 +34,17 @@ export const metadata: Metadata = {
         },
       ],
     },
+    metadataBase: new URL('https://www.webbles.fr/tarif/'),
+    alternates: {
+      canonical: '/tarif/',
+      
+    },
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
-      <head>
-        <link rel="canonical" href="https://www.webbles.fr/tarif/" />
-      </head>
       <SecondaryHeader />
-
       {children}
     </>
   );
