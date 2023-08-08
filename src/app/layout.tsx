@@ -53,7 +53,6 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <head>
         <GoogleAnalytics key="googleAnalytics" />
-        
       </head>
       <body className={roboto.className}>
         {children}

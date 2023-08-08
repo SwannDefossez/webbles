@@ -42,7 +42,7 @@ const Select = () => {
             >
               <cite style={{ margin: "0", "line-break": "strict" }}>
                 Définition raccourcie de
-                https://www.monparcourshandicap.gouv.fr/accessibilite-numerique
+                <a href="https://www.monparcourshandicap.gouv.fr/accessibilite-numerique"> https://www.monparcourshandicap.gouv.fr/accessibilite-numerique</a>
               </cite>
             </blockquote>
             <q>
@@ -77,7 +77,7 @@ const Select = () => {
           <p>
             Pour cela, le site doit respecter les normes en vigueur lors de sa
             réalisation et de ses mises à jour. Une norme internationale émise
-            par le W3C : https://www.w3.org/
+            par le W3C : <a href="https://www.w3.org/">https://www.w3.org/</a>
           </p>
         </motion.div>
       )}

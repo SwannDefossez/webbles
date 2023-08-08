@@ -7,6 +7,15 @@
   z-index: 3;
   font-size: 20px;
   line-height: 1.8rem;
+  & select {
+    color: white;
+    background-color: rgba(0, 255, 255, 0);
+    border: 2px rgb(187, 110, 110) solid;
+  }
+  & select option {
+    background-color: rgb(187, 110, 110);
+    
+  }
 }
 .collapse {
   &__label {
@@ -20,9 +29,17 @@
       @include md {
         display: block;
       }
+      & cite a {
+        color: rgb(187, 110, 110);
+        text-decoration: none;
+      }
     }
     & p {
       width: 100%;
+      & a {
+        color: rgb(187, 110, 110);
+        text-decoration: none;
+      }
     }
     @include flex(column, center, center);
     flex-basis: 100%;
@@ -34,7 +51,7 @@
     text-align: left;
     width: 95vw;
     @include sm {
-      border: white 1px solid;
+      border: rgb(187, 110, 110) 2px solid;
       border-radius: 1rem;
       width: 80vw;
       padding: 2rem;
@@ -63,7 +80,7 @@
   background-color: rgba(66, 66, 66, 0.274);
   border-radius: 1rem;
   padding-top: 2rem;
-  border: 2px white solid;
+  border: 2px rgb(187, 110, 110) solid;
 }
 
 .content_parent {

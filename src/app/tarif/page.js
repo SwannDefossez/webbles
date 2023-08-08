@@ -8,7 +8,17 @@ export default function page() {
     <div className={css.container}>
       <div className={css.tarif} id="tarifs">
         <h1>Nos Tarifs</h1>
-        <p>Tarifs à titre indicatif, nous étudions votre projet et votre budget afin de vous proposer les solutions les plus adaptées</p>
+        <p>
+          Tarifs à titre indicatif, nous étudions votre projet et votre budget
+          afin de vous proposer les solutions les plus adaptées
+        </p>
+        <p>
+          Dans les formules de création de sites ci-dessous est compris: le
+          choix et la souscription à un hebergement adapté et en votre nom, les
+          démarches et la souscription de votre nom de domaine, le design
+          adaptatif mobile/ tablette/ ordinateur, une structure optimisée pour
+          le référencement et les liens vers vos réseaux sociaux
+        </p>
         <article className={css.container}>
           <div className={css.card}>
             <header className={`${css.card__header} ${css.header1}`}>
@@ -16,10 +26,9 @@ export default function page() {
             </header>
             <section className={css.card__content}>
               <div>
-                <h4>
-                  1 page simple avec photos et textes <br /> (ex. : description
-                  activité)
-                </h4>
+                <h4>1 page pour présenter votre activité/produits</h4>
+                <h4>- Design Exclusif</h4>
+                <h4>- Animations intégrables</h4>
               </div>
             </section>
             <footer className={`${css.card__header} ${css.header1}`}>
@@ -34,11 +43,11 @@ export default function page() {
             <div className={css.card__content}>
               <div>
                 <h4>
-                  1 page présentation avec photos et textes description activité
-                  <br />1 page contact, avec design adaptatif
-                  mobile/tablette/ordinateur, optimisation SEO, lien vers vos
-                  réseaux sociaux
+                  2 pages minimum <br />
+                  (avec option pour ajouter des pages supplémentaires)
                 </h4>
+                <h4>- Design Exclusif</h4>
+                <h4>- Animations intégrables</h4>
               </div>
             </div>
             <footer className={`${css.card__header} ${css.header2}`}>
@@ -53,9 +62,9 @@ export default function page() {
             <div className={css.card__content}>
               <div>
                 <h4>
-                  Site Prestashop avec installation du thème PrestaShop gratuit,
+                  Site Prestashop avec installation d'un thème PrestaShop,
                   moyens de paiement et livraison, catégories, design adaptatif,
-                  formation d’une personne à la création de fiches produit
+                  formation à la création de fiches produit
                 </h4>
               </div>
             </div>
@@ -71,10 +80,11 @@ export default function page() {
             <div className={css.card__content}>
               <div>
                 <h4>
-                  Exemple un blog, forum, service communication privé
-                  d’entreprise, Pages comportant un front et un back qui permet
-                  de gérer les bases de données, les authentifications des
-                  membres
+                  Blog, forum, service communication privé d’entreprise...
+                </h4>
+                <h4>
+                  Site comportant un front et un back qui permet de gérer les
+                  bases de données et les authentifications des membres
                 </h4>
               </div>
             </div>
@@ -144,7 +154,7 @@ export default function page() {
               </div>
             </div>
             <footer className={`${css.card__header} ${css.header8}`}>
-              <h3>50€ / mois</h3>
+              <h3>à partir de 20€ / mois</h3>
             </footer>
           </div>
 
@@ -158,7 +168,7 @@ export default function page() {
               </div>
             </div>
             <footer className={`${css.card__header} ${css.header9}`}>
-              <h3>à partir de 50€</h3>
+              <h3>à partir de 20€</h3>
             </footer>
           </div>
         </article>
