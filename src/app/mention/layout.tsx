@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Site internet, site vitrine, e-commerce, les mentions légales sont obligatoires, ainsi que les cgv et les RGPD quand nous collectons vos données",
   openGraph: {
     type: "website",
-    url: "http://www.webbles.fr/mention/",
+    url: "https://www.webbles.fr/mention/",
     title: "Mentions légales de l'agence Webbles",
     description:
       "Site internet, site vitrine, e-commerce, les mentions légales sont obligatoires, ainsi que les cgv et les RGPD quand nous collectons vos données",

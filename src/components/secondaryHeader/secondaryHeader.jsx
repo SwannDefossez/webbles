@@ -71,22 +71,22 @@ function secondaryHeader() {
             </a>
           </li>
           <li>
-            <a className={pathname == "/tarif" ? css.active : ""} href="/tarif">
+            <a className={pathname == "/tarif/" ? css.active : ""} href="/tarif/">
               <h3>Tarifs</h3>
             </a>
           </li>
           <li>
             <a
-              className={pathname == "/contact" ? css.active : ""}
-              href="/contact"
+              className={pathname == "/contact/" ? css.active : ""}
+              href="/contact/"
             >
               <h3>Contact</h3>
             </a>
           </li>
           <li>
             <a
-              className={pathname == "/lexique" ? css.active : ""}
-              href="/lexique"
+              className={pathname == "/lexique/" ? css.active : ""}
+              href="/lexique/"
             >
               <h3>Lexique</h3>
             </a>
@@ -109,7 +109,7 @@ function secondaryHeader() {
            
             className={css.menu__li}
           >
-            <a className={css.menu__link} href="/tarif">
+            <a className={css.menu__link} href="/tarif/">
               Tarifs
             </a>
           </motion.li>
@@ -118,7 +118,7 @@ function secondaryHeader() {
           
             className={css.menu__li}
           >
-            <a className={css.menu__link} href="/contact#contact">
+            <a className={css.menu__link} href="/contact/">
               Contact
             </a>
           </motion.li>
@@ -126,7 +126,7 @@ function secondaryHeader() {
           <motion.li
             className={css.menu__li}
           >
-            <a className={css.menu__link} href="/lexique#lexique">
+            <a className={css.menu__link} href="/lexique/">
               Lexique
             </a>
           </motion.li>

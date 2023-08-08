@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Site internet, réseaux sociaux, qu'elle que soit votre demande, nous apportons une réponse adaptée personnalisées",
     openGraph: {
       type: "website",
-      url: "http://www.webbles.fr/contact/",
+      url: "https://www.webbles.fr/contact/",
       title:
       "Contactez Webbles pour nous exposer vos projets web, notre équipe de spécialistes",
     description:

@@ -185,7 +185,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <a className={css.menu__link} href="/tarif">
+              <a className={css.menu__link} href="/tarif/">
                 Tarifs
               </a>
             </motion.li>
@@ -198,7 +198,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <a className={css.menu__link} href="/contact">
+              <a className={css.menu__link} href="/contact/">
                 Contact
               </a>
             </motion.li>
@@ -212,7 +212,7 @@ function header() {
               }}
               className={css.menu__li}
             >
-              <a className={css.menu__link} href="/lexique">
+              <a className={css.menu__link} href="/lexique/">
                 Lexique
               </a>
             </motion.li>

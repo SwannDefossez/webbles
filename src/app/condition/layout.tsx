@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Afin de collaborer dans de bonnes conditions et vous sécuriser, merci de lire nos conditions générales de vente",
     openGraph: {
       type: "website",
-      url: "http://www.webbles.fr/condition/",
+      url: "https://www.webbles.fr/condition/",
       title:
     "Conditions générales de vente Webbles, agence basée au Cap d'Agde, Agde",
   description:

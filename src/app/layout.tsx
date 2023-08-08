@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Création site vitrine, e-commerce présence en ligne, référencement, notre équipe s'adapte à vos besoins. Agde, Cap d'Agde, Béziers, Pézenas, Sète et environs ou toute la France",
   openGraph: {
     type: "website",
-    url: "http://www.webbles.fr/",
+    url: "https://www.webbles.fr/",
     title:
       "Webbles, agence web, création de sites internet, SEO, réferencement, Cap d'Agde, Agde, Béziers, France",
     description:

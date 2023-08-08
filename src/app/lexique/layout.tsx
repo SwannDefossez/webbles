@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Définition simpliste des mots techniques, explications accessibles",
     openGraph: {
       type: "website",
-      url: "http://www.webbles.fr/lexique/",
+      url: "https://www.webbles.fr/lexique/",
       title:
     "Web simplifié, Lexique, explications, dictionnaire, des termes techniques",
   description:

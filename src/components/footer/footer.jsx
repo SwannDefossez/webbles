@@ -39,9 +39,9 @@ function footer() {
         </a>
       </div>
       <div className={css.footer__link}>
-        <a href="/mention">Mentions légales</a>
+        <a href="/mention/">Mentions légales</a>
         <h5>|</h5>
-        <a href="/condition">Condition générale de vente</a>
+        <a href="/condition/">Condition générale de vente</a>
       </div>
     </div>
   );

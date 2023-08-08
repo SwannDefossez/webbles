@@ -62,7 +62,7 @@ export default function page() {
             <div className={css.card__content}>
               <div>
                 <h4>
-                  Site Prestashop avec installation d'un thème PrestaShop,
+                  Site Prestashop avec installation d&apos;un thème PrestaShop,
                   moyens de paiement et livraison, catégories, design adaptatif,
                   formation à la création de fiches produit
                 </h4>
@@ -80,7 +80,7 @@ export default function page() {
             <div className={css.card__content}>
               <div>
                 <h4>
-                  Blog, forum, service communication privé d’entreprise...
+                  Blog, forum, service communication privé d&apos;entreprise...
                 </h4>
                 <h4>
                   Site comportant un front et un back qui permet de gérer les

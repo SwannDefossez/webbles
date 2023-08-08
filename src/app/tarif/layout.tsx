@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Contactez nous pour obtenir un devis adapté personnalisé, Cap d'Agde, Agde",
     openGraph: {
       type: "website",
-      url: "http://www.webbles.fr/tarif/",
+      url: "https://www.webbles.fr/tarif/",
       title:
       "tarifs de base de l'agence Webbles",
       description:
